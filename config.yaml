@@ -225,9 +225,9 @@ params:
         badges:
           - "Game Jam"
           - "En"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/GameJamFGA-UnB/Grupo4
+#         links:
+#           - icon: fab fa-github
+#             url: https://github.com/GameJamFGA-UnB/Grupo4
 
   # Projects 2
   projects2:
