@@ -23,7 +23,6 @@ jobs:
 
       - name: Build
         run: |
-          cd site
           hugo --minify
 
       - name: Deploy
