@@ -1,0 +1,302 @@
+baseURL: "https://iurisevero.github.io/"
+languageCode: "en-us"
+title: "Iuri Severo"
+theme: hugo-profile
+
+# Paginate: 3
+# disqusShortname: gurusabarish
+# googleAnalytics: G-DWJJVE27WD
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    # - identifier: blog
+    #   name: Blog
+    #   title: Blog posts
+    #   url: /blogs
+    #   weight: 1
+
+    - identifier: certificates
+      name: Certificates
+      title: Certificates
+      url: /certificates
+      weight: 1
+
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Hugo Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/iuri_invert.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: true
+    defaultTheme: "dark" # "light"
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandLogo: "/iuri_invert.png" # Logo for the brand | default is the favicon variable
+    brandName: "Iuri Severo" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableProjects2: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Iuri."
+    subtitle: "I create games (or try to)"
+    content: "A passionate gamer and developer. I like to master everything I try to do.<br/>22% Achiever / 22% Free Spirit according to HEXAD user types"
+    # image: /images/hero.svg
+    button:
+      enable: true
+      name: "Resume"
+      url: "/resume.pdf"
+      download: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/iurisevero
+        - icon: fab fa-linkedin
+          url: https://linkedin.com/in/iuri-severo-alves/
+        - icon: fab fa-itch-io
+          url: https://iurisevero.itch.io/
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    # image: "/images/me.png"
+    content: |-
+      Graduating in Software Engineering at the University of Brasília, focusing on **Competitive Programming** and **Game Development**. I participated in several Programming Marathons, some Game Jams and I tried to create an MMO with some friends (crazy, I know... We try to take a bigger step than our leg, but who knows, maybe one day it won't work?!). I was the manager of the Hallelujah project, at **Orc'estra Gamificação**, in addition to having been responsible for creating various content posted on the company's blog.
+      
+      For as long as I can remember I've been passionate about games, whether it's computer, console or mobile, and I've always admired the influence they have on their players, the feelings they arouse. My goal is to one day be able to **create games that bring that same passion I have to those who play them**, that leave them as mesmerized as I was when I played "The Legend of Zelda: Ocarina of Time" for the first time.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "C#"
+        - "C++"
+        - "Unity3d"
+        - "Python"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Founder"
+        company: "Mach874k"
+        companyUrl: "https://mach874k.com/"
+        date: "Dez 2019 - present"
+        info:
+          enable: true
+          content: Working as a Software Engineer and Game Dev at Mach874k
+        content: "I'm working with several areas of game creation, but mainly with Unity3D on the development of Reality RPG (our augmented reality mobile game). I've also worked on APIs written in Python and Go; and the Cloud Infrastructure development with Kubernetes and GKE."
+
+      - job: "Project Development Manager"
+        company: Orcestra Gamificacao
+        companyUrl: "https://orcestra.com.br"
+        date: "Fev 2020 - Out 2020"
+        info:
+          enable: false
+        content: "I've planned and managed a team of four developers in the Hallelujah project. A mobile application where the front-end development was in React Native and the back-end was an API in Flask. The API was used mainly to take the data from the client's database and transferred it into our database, in PostgreSQL, so that it could be used on the front-end, with a client-server architecture."
+
+      - job: "Marketing Advisor"
+        company: "Orcestra Gamificacao"
+        companyUrl: "https://orcestra.com.br"
+        date: "Jan 2020 - Aug 2020"
+        info:
+          enable: false
+        content: |
+          Initially I worked in the creation of arts and posts for facebook and instagram, but, after defining the areas of operation, I was responsible for creating and disseminating the contents of the [company's blog](https://orcestra.com.br/blogs/), which achieved a growth of 300% during my services.
+          
+          During this period I studied several contents such as SEO and copywriting, to improve the level and reach of publications; Self-Determination Theory and other psychology content, in order to be able to write about motivation; Octalysis and other gamification frameworks, for texts on this subject; and software content, such as Requirements Elicitation or Scrum.
+
+          - [Scrum: Como fazer mais em menos tempo](http://orcestra.com.br/2020/06/06/scrum-como-fazer-mais-em-menos-tempo/)
+          - [As 6 etapas para Desenvolver uma Gamificação](http://orcestra.com.br/2020/06/01/as-6-etapas-para-desenvolver-uma-gamificacao/).
+          >> All texts are in brazilian portuguese
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    # index: true
+    items:
+      - title: "Bachelor of Software Engineering"
+        school:
+          name: "University of Brasilia"
+          url: "https://www.unb.br/"
+        date: "2017 - 2023"
+        GPA: "4.45 out of 5.0"
+        content: |-
+          Extracurricular Activities
+            - Worked at [Orc'estra Gamificação](https://orcestra.com.br/), a [Junior Company](https://brasiljunior.org.br/). 
+            - Student assistant of the subjects: Computer Programming Algorithms, Programming for Competition, Design of Algorithms and Databases
+            - Working on Scientific Initiative Project about [MUDs](https://pt.wikipedia.org/wiki/Multi-user_dungeon)
+
+  # projects
+  projects:
+    enable: true
+    title: "Games"
+    items:
+      - title: Jurnada pelo CLT
+        content: Help Jurema conquer the much-desired signature at CLT in this Visual Novel full of mysticism and easter eggs.
+        image: /images/games/JurnadaPeloCLT.png
+        featured:
+          name: Play
+          link: https://kioco.itch.io/jurn
+        badges:
+          - "Game Jam"
+          - "PT-Br"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/GameJamFGA-UnB/Grupo4
+
+      - title: Running Up that City
+        content: A single player platform game where you control the super rock star who finds himself in an adverse situation and is forced to flee from one of his crazy fans while overcoming the obstacles in the city.
+        image: /images/games/RunningUpThatCity.png
+        featured:
+          name: Play
+          link: https://amosribeirop.itch.io/runningupthatcity
+        badges:
+          - "Game Jam"
+          - "En"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/GameJamFGA-UnB/Grupo4
+
+  # Projects 2
+  projects2:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: EuPescador
+        content: |
+          EuPescador is a mobile application, developed by Software Engineering students at UnB on the FGA campus, which aims to help the project “Pro-Espécies: Todos contra a extinction
+        image: /images/projects/EuPescador.png
+        featured:
+          name: Site
+          link: https://fga-eps-mds.github.io/2021.1-Pro-Especies-Docs/
+        links:
+          - icon: fab fa-github
+            url: https://github.com/fga-eps-mds/2021.1-Pro-Especies-Docs
+
+      - title: iGado
+        content: The iGado application aims to contribute to the management and management of cattle that are concentrated in rural properties.
+        image: /images/projects/iGado.png
+        featured:
+          name: Site
+          link: https://unbarqdsw.github.io/2020.1_G13_iGado/#/
+        links:
+          - icon: fab fa-github
+            url: https://github.com/UnBArqDsw/2020.1_G13_iGado
+
+      - title: Aix
+        content: Aix is a learning chatbot integrated into the Jupyter platform as a support base for teaching python language for beginner programmers!
+        image: /images/projects/Aix.png
+        featured:
+          name: Site
+          link: https://fga-eps-mds.github.io/2019.1-Aix/
+        links:
+          - icon: fab fa-github
+            url: https://github.com/fga-eps-mds/2019.1-Aix
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Mad Jam 2022
+        content: Participation in the 2022 edition of Mad Jam, reaching the 2th place.
+        url: https://itch.io/jam/madjam2022
+      - title: International Collegiate Programming Contest (ICPC)
+        content: Participation in the 2019 edition of ICPC, South America Brazil, First Phase, reaching the 258th place among 726 teams.
+        url: https://maratona.sbc.org.br/hist/2019/index.html
+      - title: International Collegiate Programming Contest (ICPC)
+        content: Participation in the 2018 edition of ICPC, South America Brazil, First Phase, reaching the 382nd place among 1156 teams.
+        url: http://maratona.sbc.org.br/hist/2018/index.html
+      - title: Brazilian Programming Olympics (OBI)
+        content: Participation in the XX Brazilian Informatics Olympiad (OBI2018), Senior Level Programming Modality, reaching the 68th place among 1821 participants.
+        url: https://olimpiada.ic.unicamp.br/passadas/OBI2018/
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Wanna chat?"
+    content: My inbox is always open. Send me an email or a message on linkedin!
+    email: nobreiuri@gmail.com
+    btnName: Mail me
+
+  footer:
+    recentPosts: false
+    socialNetworks:
+      github: https://github.com/iurisevero
+      linkedin: https://linkedin.com/in/iuri-severo-alves/
+      itch: https://iurisevero.itch.io/
+      # twitter: https://twitter.com
+      # instagram: https://instagram.com
+      # facebook: https://facebook.com
