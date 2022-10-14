@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-Check [my website](https://iurisevero.github.io/iurisevero) for more informations!
+Check [my website](https://iurisevero.github.io/) for more informations!
 
 <!--
 **iurisevero/iurisevero** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
