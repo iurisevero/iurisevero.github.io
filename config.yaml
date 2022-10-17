@@ -203,6 +203,18 @@ params:
     enable: true
     title: "Games"
     items:
+      - title: Reality RPG
+        content: A mobile Cyber Fantasy Adventure with Augmented reality that allows you to play in the Real World.
+        image: /images/games/RealityRPG.png
+        featured:
+          name: Site
+          link: https://mach874k.com/project/reallity-rpg/
+        badges:
+          - "En"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/GameJamFGA-UnB/Grupo4
+      
       - title: Jurnada pelo CLT
         content: Help Jurema conquer the much-desired signature at CLT in this Visual Novel full of mysticism and easter eggs.
         image: /images/games/JurnadaPeloCLT.png
