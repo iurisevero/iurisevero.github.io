@@ -107,7 +107,7 @@ params:
     title: "Iuri."
     subtitle: "I create games (or try to)"
     content: "A passionate gamer and developer. I like to master everything I try to do.<br/>22% Achiever / 22% Free Spirit according to HEXAD user types"
-    # image: /images/hero.svg
+    image: /images/draw.png
     button:
       enable: true
       name: "Resume"
@@ -129,7 +129,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    # image: "/images/me.png"
+    image: "/images/me.png"
     content: |-
       Graduating in Software Engineering at the University of Brasília, focusing on **Competitive Programming** and **Game Development**. I participated in several Programming Marathons, some Game Jams and I tried to create an MMO with some friends (crazy, I know... We try to take a bigger step than our leg, but who knows, maybe one day it won't work?!). I was the manager of the Hallelujah project, at **Orc'estra Gamificação**, in addition to having been responsible for creating various content posted on the company's blog.
       
