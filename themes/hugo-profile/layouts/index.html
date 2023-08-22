@@ -1,6 +1,7 @@
 {{ define "head" }}
 <meta name="description" content={{ .Site.Params.description }}>
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/index.css" media="all">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/games.css" media="all">
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/projects.css" media="all">
 
 <!-- fontawesome -->
@@ -16,8 +17,8 @@
 {{- partial "sections/about.html" . -}}
 {{- partial "sections/experience.html" . -}}
 {{- partial "sections/education.html" . -}}
+{{- partial "sections/games.html" . -}}
 {{- partial "sections/projects.html" . -}}
-{{- partial "sections/projects2.html" . -}}
 {{- partial "sections/achievements.html" . -}}
 {{- partial "sections/contact.html" . -}}
 {{ end }}

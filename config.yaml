@@ -95,8 +95,8 @@ params:
   #     disableAbout: true
   #     disableExperience: true
   #     disableEducation: true
+  #     disableGames: true
   #     disableProjects: true
-  #     disableProjects2: true
   #     disableAchievements: true
   #     disableContact: true
 
@@ -138,8 +138,8 @@ params:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
-        - "C#"
         - "C++"
+        - "C#"
         - "Unity3d"
         - "Python"
 
@@ -163,7 +163,7 @@ params:
         date: "Fev 2020 - Out 2020"
         info:
           enable: false
-        content: "I've planned and managed a team of four developers in the Hallelujah project. A mobile application where the front-end development was in React Native and the back-end was an API in Flask. The API was used mainly to take the data from the client's database and transferred it into our database, in PostgreSQL, so that it could be used on the front-end, with a client-server architecture."
+        content: "As the Project Manager for the Hallelujah project, I led a team of four developers in the development of a dynamic mobile application. With a focus on client-server architecture, we employed React Native for frontend development and Flask for creating a robust back-end API. The API was responsible for transferring data from the client's database to our PostgreSQL database, ensuring seamless integration and an enhanced user experience on the front-end."
 
       - job: "Marketing Advisor"
         company: "Orcestra Gamificacao"
@@ -191,17 +191,17 @@ params:
           name: "University of Brasilia"
           url: "https://www.unb.br/"
         date: "2017 - 2023"
-        GPA: "4.45 out of 5.0"
+        GPA: "4.41 out of 5.0"
         content: |-
           Extracurricular Activities
             - Worked at [Orc'estra Gamificação](https://orcestra.com.br/), a [Junior Company](https://brasiljunior.org.br/). 
             - Student assistant of the subjects: Computer Programming Algorithms, Programming for Competition, Design of Algorithms and Databases
-            - Working on Scientific Initiative Project about [MUDs](https://pt.wikipedia.org/wiki/Multi-user_dungeon)
+            - Worked on Scientific Initiative Project about [MUDs](https://pt.wikipedia.org/wiki/Multi-user_dungeon), the [UnMUD](https://unmud.github.io/UnMUD/#/)
 
-  # projects
-  projects:
+  # games
+  games:
     enable: true
-    title: "Games"
+    # title: "Games"
     items:
       - title: Reality RPG
         content: A mobile Cyber Fantasy Adventure with Augmented reality that allows you to play in the Real World.
@@ -241,11 +241,22 @@ params:
 #           - icon: fab fa-github
 #             url: https://github.com/GameJamFGA-UnB/Grupo4
 
-  # Projects 2
-  projects2:
+  # Projects
+  projects:
     enable: true
     # title: "Custom Name"
     items:
+      - title: UnMUD
+        content: |
+          UnMUD is a Multi-User Dungeon (MUD) created as a Research and Course Completion Project at the University of Brasília. The primary objective was to develop a deployable MUD codebase (CI/CD) and integrate it to a relational database (PostgreSQL) while focusing on increasing test coverage, enhancing clean code, upgrading tooling and enforcing new C++ versions best practices.
+        image: /iuri_invert.png
+        featured:
+          name: Site
+          link: https://unmud.github.io/UnMUD/#/
+        links:
+          - icon: fab fa-github
+            url: https://github.com/UnMUD/UnMUD
+
       - title: EuPescador
         content: |
           EuPescador is a mobile application, developed by Software Engineering students at UnB on the FGA campus, which aims to help the project “Pro-Espécies: Todos contra a extinction

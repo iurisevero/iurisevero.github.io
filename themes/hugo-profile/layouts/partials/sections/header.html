@@ -68,17 +68,17 @@
                     </li>
                     {{ end }}
 
-                    {{ if and (.Site.Params.projects.enable | default false) (not (.Site.Params.navbar.menus.disableEducation | default false)) }}
+                    {{ if and (.Site.Params.games.enable | default false) (not (.Site.Params.navbar.menus.disableGames | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#projects"
-                            aria-label="projects">{{ .Site.Params.projects.title |  default "Projects" }}</a>
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#games"
+                            aria-label="projects">{{ .Site.Params.games.title |  default "Games" }}</a>
                     </li>
                     {{ end }}
 
-                    {{ if and (.Site.Params.projects2.enable | default false) (not (.Site.Params.navbar.menus.disableEducation | default false)) }}
+                    {{ if and (.Site.Params.projects.enable | default false) (not (.Site.Params.navbar.menus.disableProjects | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#projects2"
-                            aria-label="projects">{{ .Site.Params.projects2.title |  default "Projects" }}</a>
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#projects"
+                            aria-label="projects">{{ .Site.Params.projects.title |  default "Projects" }}</a>
                     </li>
                     {{ end }}
 
