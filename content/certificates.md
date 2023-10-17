@@ -7,6 +7,10 @@ headerInfo: false
 socialShare: false
 ---
 
+<!-- ## Sebrae Inova Game Jam
+
+<img src="/images/certificate/SebraeInova2023.jpg" alt="drawing" width="900"/> -->
+
 ## MadJam
 
 <img src="/images/certificate/MadJam2022.jpg" alt="drawing" width="900"/>

@@ -215,6 +215,19 @@ params:
         #   - icon: fab fa-github
         #     url: https://github.com/GameJamFGA-UnB/Grupo4
       
+      - title: Engarrafados
+        content: Control the traffic and don't let the traffic jam drive the city residents crazy!
+        image: /images/games/Engarrafados.png
+        featured:
+          name: Play
+          link: https://iurisevero.itch.io/engarrafados
+        badges:
+          - "Game Jam"
+          - "PT-Br"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/iurisevero/PajuAlves
+      
       - title: Jurnada pelo CLT
         content: Help Jurema conquer the much-desired signature at CLT in this Visual Novel full of mysticism and easter eggs.
         image: /images/games/JurnadaPeloCLT.png
