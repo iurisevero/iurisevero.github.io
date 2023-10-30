@@ -131,7 +131,7 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      Graduating in Software Engineering at the University of Brasília, focusing on **Competitive Programming** and **Game Development**. I participated in several Programming Marathons, some Game Jams and I tried to create an MMO with some friends (crazy, I know... We try to take a bigger step than our leg, but who knows, maybe one day it won't work?!). I was the manager of the Hallelujah project, at **Orc'estra Gamificação**, in addition to having been responsible for creating various content posted on the company's blog.
+      Graduated in Software Engineering at the University of Brasília, focusing on **Competitive Programming** and **Game Development**. I participated in several Programming Marathons, some Game Jams and I tried to create an MMO with some friends (crazy, I know... We try to take a bigger step than our leg, but who knows, maybe one day it won't work?!). I was the manager of the Hallelujah project, at **Orc'estra Gamificação**, in addition to having been responsible for creating various content posted on the company's blog.
       
       For as long as I can remember I've been passionate about games, whether it's computer, console or mobile, and I've always admired the influence they have on their players, the feelings they arouse. My goal is to one day be able to **create games that bring that same passion I have to those who play them**, that leave them as mesmerized as I was when I played "The Legend of Zelda: Ocarina of Time" for the first time.
     skills:
@@ -224,7 +224,8 @@ params:
         badges:
           - "Game Jam"
           - "PT-Br"
-          - "1st Place"
+          - "1st Place 🥇"
+          # - "3rd Place 🥉"
         links:
           - icon: fab fa-github
             url: https://github.com/iurisevero/GJ-2324
@@ -238,7 +239,7 @@ params:
         badges:
           - "Game Jam"
           - "PT-Br"
-          - "2nd Place"
+          - "2nd Place 🥈"
         links:
           - icon: fab fa-github
             url: https://github.com/iurisevero/PajuAlves
