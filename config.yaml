@@ -220,7 +220,7 @@ params:
         image: /images/games/TillTheLastSeed.png
         featured:
           name: Play
-          link: https://jeffersonfillipe.itch.io/tilthelastseed
+          link: https://jeffersonfillipe.itch.io/tillthelastseed
         badges:
           - "Game Jam"
           - "PT-Br"
