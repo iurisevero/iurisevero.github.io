@@ -215,7 +215,7 @@ params:
         #   - icon: fab fa-github
         #     url: https://github.com/GameJamFGA-UnB/Grupo4
 
-      - title: Til the Last Seed
+      - title: Till the Last Seed
         content: 
         image: /images/games/TilTheLastSeed.png
         featured:
