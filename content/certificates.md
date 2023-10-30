@@ -7,7 +7,11 @@ headerInfo: false
 socialShare: false
 ---
 
-<!-- ## Sebrae Inova Game Jam
+<!-- ## Game Jam Plus DF 2023/2024
+
+<img src="/images/certificate/GJP2324.jpg" alt="drawing" width="900"/> -->
+
+<!-- ## Sebrae Inova Game Jam 2023
 
 <img src="/images/certificate/SebraeInova2023.jpg" alt="drawing" width="900"/> -->
 

@@ -214,7 +214,21 @@ params:
         # links:
         #   - icon: fab fa-github
         #     url: https://github.com/GameJamFGA-UnB/Grupo4
-      
+
+      - title: Til the Last Seed
+        content: 
+        image: /images/games/TilTheLastSeed.png
+        featured:
+          name: Play
+          link: https://jeffersonfillipe.itch.io/tilthelastseed
+        badges:
+          - "Game Jam"
+          - "PT-Br"
+          - "1st Place"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/iurisevero/GJ-2324
+
       - title: Engarrafados
         content: Control the traffic and don't let the traffic jam drive the city residents crazy!
         image: /images/games/Engarrafados.png
@@ -224,6 +238,7 @@ params:
         badges:
           - "Game Jam"
           - "PT-Br"
+          - "2nd Place"
         links:
           - icon: fab fa-github
             url: https://github.com/iurisevero/PajuAlves
@@ -237,9 +252,9 @@ params:
         badges:
           - "Game Jam"
           - "PT-Br"
-        # links:
-        #   - icon: fab fa-github
-        #     url: https://github.com/GameJamFGA-UnB/Grupo4
+        links:
+          - icon: fab fa-github
+            url: https://github.com/iurisevero/MadJam
 
       - title: Running Up that City
         content: A single player platform game where you control the super rock star who finds himself in an adverse situation and is forced to flee from one of his crazy fans while overcoming the obstacles in the city.
@@ -250,9 +265,9 @@ params:
         badges:
           - "Game Jam"
           - "En"
-#         links:
-#           - icon: fab fa-github
-#             url: https://github.com/GameJamFGA-UnB/Grupo4
+        links:
+          - icon: fab fa-github
+            url: https://github.com/GameJamFGA-UnB/Grupo4
 
   # Projects
   projects:
