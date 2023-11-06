@@ -129,7 +129,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/formatura.png"
     content: |-
       Graduated in Software Engineering at the University of Brasília, focusing on **Competitive Programming** and **Game Development**. I participated in several Programming Marathons, some Game Jams and I tried to create an MMO with some friends (crazy, I know... We try to take a bigger step than our leg, but who knows, maybe one day it won't work?!). I was the manager of the Hallelujah project, at **Orc'estra Gamificação**, in addition to having been responsible for creating various content posted on the company's blog.
       
@@ -141,7 +141,7 @@ params:
         - "C++"
         - "C#"
         - "Unity3d"
-        - "Python"
+        - "PostgreSQL"
 
   # Experience
   experience:
@@ -191,7 +191,7 @@ params:
           name: "University of Brasilia"
           url: "https://www.unb.br/"
         date: "2017 - 2023"
-        GPA: "4.41 out of 5.0"
+        GPA: "4.47 out of 5.0"
         content: |-
           Extracurricular Activities
             - Worked at [Orc'estra Gamificação](https://orcestra.com.br/), a [Junior Company](https://brasiljunior.org.br/). 
@@ -288,7 +288,7 @@ params:
 
       - title: EuPescador
         content: |
-          EuPescador is a mobile application, developed by Software Engineering students at UnB on the FGA campus, which aims to help the project “Pro-Espécies: Todos contra a extinction
+          EuPescador is a mobile application, developed by Software Engineering students at UnB on the FGA campus, which aims to help the project "Pro-Espécies: Todos contra a extinção"
         image: /images/projects/EuPescador.png
         featured:
           name: Site

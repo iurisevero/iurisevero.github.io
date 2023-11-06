@@ -15,6 +15,12 @@ socialShare: false
 
 <img src="/images/certificate/SebraeInova2023.jpg" alt="drawing" width="900"/> -->
 
+## 29th UnB Scientific Initiation Congress and 20th DF Scientific Initiation Congress
+
+<img src="/images/certificate/HonorPibic.jpg" alt="drawing" width="900"/>
+
+<img src="/images/certificate/ConclusionPibic.jpg" alt="drawing" width="900"/>
+
 ## MadJam
 
 <img src="/images/certificate/MadJam2022.jpg" alt="drawing" width="900"/>
