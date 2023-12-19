@@ -239,7 +239,8 @@ params:
         badges:
           - "Game Jam"
           - "PT-Br"
-          - "2nd Place 🥈"
+          # - "2nd Place 🥈"
+          - "1st Place 🥇"
         links:
           - icon: fab fa-github
             url: https://github.com/iurisevero/PajuAlves
@@ -253,6 +254,7 @@ params:
         badges:
           - "Game Jam"
           - "PT-Br"
+          - "2nd Place 🥈"
         links:
           - icon: fab fa-github
             url: https://github.com/iurisevero/MadJam
