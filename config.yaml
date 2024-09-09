@@ -148,14 +148,30 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Founder"
+      - job: "Application Developer"
+        company: "Agência Nacional de Transportes Aquaviários (ANTAQ)"
+        companyUrl: "https://www.gov.br/antaq/pt-br"
+        date: "Nov 2023 - present"
+        info:
+          enable: true
+          content: Working as a Application Developer at ANTAQ
+        content: |
+          - Develops custom internal systems using Oracle APEX and PL/SQL
+          - Participate in requirements elicitation and documentation
+          - Implemented an auto-updating database that retrieves and integrates data from external APIs
+
+      - job: "Founder | Game Developer"
         company: "Mach874k"
         companyUrl: "https://mach874k.com/"
         date: "Dez 2019 - present"
         info:
           enable: true
           content: Working as a Software Engineer and Game Dev at Mach874k
-        content: "I'm working with several areas of game creation, but mainly with Unity3D on the development of Reality RPG (our augmented reality mobile game). I've also worked on APIs written in Python and Go; and the Cloud Infrastructure development with Kubernetes and GKE."
+        content: |
+          Game developer specializing in Unity
+          - Workingwithseveralareasofgamecreation, particularly focusing on Unity3D for the development of Reality RPG and Critalia.
+          - Worked on APIs written in Python and Go.
+          - Managed Cloud Infrastructure using Kubernetes and GKE.
 
       - job: "Project Development Manager"
         company: Orcestra Gamificacao
@@ -324,6 +340,12 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - title: Game Jam+ DF 2023/2024
+        content: Participation in the 2023/2024 edition of Game Jam+, reaching the 1st place.
+        url: https://www.youtube.com/watch?app=desktop&v=Nja72yQsv3Q
+      - title: Sebrae Inova Game Jam 2023
+        content: Participation in the 2023 edition of Sebrae Inova Game Jam, reaching the 1st place.
+        url: https://itch.io/jam/sebrae-inova
       - title: Mad Jam 2022
         content: Participation in the 2022 edition of Mad Jam, reaching the 2th place.
         url: https://itch.io/jam/madjam2022
