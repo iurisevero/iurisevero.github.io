@@ -149,7 +149,7 @@ params:
     # title: "Custom Name"
     items:
       - job: "Application Developer"
-        company: "Agência Nacional de Transportes Aquaviários (ANTAQ)"
+        company: "ANTAQ"
         companyUrl: "https://www.gov.br/antaq/pt-br"
         date: "Nov 2023 - present"
         info:
