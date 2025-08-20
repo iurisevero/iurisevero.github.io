@@ -131,47 +131,65 @@ params:
     title: "About Me"
     image: "/images/formatura.png"
     content: |-
-      Graduated in Software Engineering at the University of Brasília, focusing on **Competitive Programming** and **Game Development**. I participated in several Programming Marathons, some Game Jams and I tried to create an MMO with some friends (crazy, I know... We try to take a bigger step than our leg, but who knows, maybe one day it won't work?!). I was the manager of the Hallelujah project, at **Orc'estra Gamificação**, in addition to having been responsible for creating various content posted on the company's blog.
-      
-      For as long as I can remember I've been passionate about games, whether it's computer, console or mobile, and I've always admired the influence they have on their players, the feelings they arouse. My goal is to one day be able to **create games that bring that same passion I have to those who play them**, that leave them as mesmerized as I was when I played "The Legend of Zelda: Ocarina of Time" for the first time.
+      Graduated in Software Engineering from the University of Brasília, with a focus on Competitive Programming and **Game Development**. I've participated in several Programming Marathons, many Game Jams, and even tried building an MMO with some friends (yeah, a bit of a crazy idea… we definitely bit off more than we could chew, but who knows, maybe one day it'll happen?). Currently, I work at **External Secrets Inc.** as a Full Stack Engineer, developing solutions for **secrets management**. I also worked at ANTAQ, where I developed internal systems.
+
+      Ever since I can remember, I've been passionate about games—whether on PC, console, or mobile—and I've always admired the influence they have on players and the emotions they spark. My goal is to one day **create games that bring this same passion to others**, games that captivate players just as much as I was when I played The Legend of Zelda: Ocarina of Time for the first time.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
-        - "C++"
+        - "Go"
+        - "Python"
+        - "Kubernetes"
         - "C#"
         - "Unity3d"
-        - "PostgreSQL"
+        - "C++"
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Application Developer"
-        company: "ANTAQ"
-        companyUrl: "https://www.gov.br/antaq/pt-br"
-        date: "Nov 2023 - present"
+      - job: "Full Stack Engineer"
+        company: "External Secrets Inc"
+        companyUrl: "https://www.externalsecrets.com/"
+        date: "Nov 2024 - present"
         info:
           enable: true
-          content: Working as a Application Developer at ANTAQ
+          content: Working as a Full Stack Engineer at External Secrets Inc.
         content: |
-          - Develops custom internal systems using Oracle APEX and PL/SQL
-          - Participate in requirements elicitation and documentation
-          - Implemented an auto-updating database that retrieves and integrates data from external APIs
+          - Co-develop the web user interface for all company services.
+          - Co-developed an audit analytics platform using MongoDB, providing real-time visibility and compliance reporting for secret management.
+          - Co-developed a dynamic credentials system for Kubernetes, issuing secrets at pod startup and revoking them on teardown, avoiding secret leakage.
+          - Contribute to the External Secrets Operator (open source), implementing bug fixes, new generators, and Kubernetes controllers.
+
+
+      - job: "Full Stack Developer"
+        company: "National Waterway Transport Agency"
+        companyUrl: "https://www.gov.br/antaq/pt-br"
+        date: "Nov 2023 - Oct 2024"
+        info:
+          enable: true
+          content: Working as a Full Stack Developer at ANTAQ
+        content: |
+          - Developed internal systems using Oracle APEX and PL/SQL.
+          - Actively participated in requirements elicitation and documentation.
+          - Implemented functions to enable a self-updating database by integrating data from external APIs.
+
 
       - job: "Founder | Game Developer"
         company: "Mach874k"
         companyUrl: "https://mach874k.com/"
-        date: "Dez 2019 - present"
+        date: "Dez 2019 - November 2022"
         info:
           enable: true
           content: Working as a Software Engineer and Game Dev at Mach874k
         content: |
           Game developer specializing in Unity
-          - Workingwithseveralareasofgamecreation, particularly focusing on Unity3D for the development of Reality RPG and Critalia.
-          - Worked on APIs written in Python and Go.
-          - Managed Cloud Infrastructure using Kubernetes and GKE.
+          - Worked across multiple areas of game development, with a strong focus on Unity for projects such as Reality RPG, a 3D multiplayer mobile RPG,  and Critalia, a 2D singleplayer metroidvania.
+          - Developed APIs written in Python and Go and integrated them to Unity.
+          - Managed cloud infrastructure using Kubernetes and Google Kubernetes Engine (GKE).
+
 
       - job: "Project Development Manager"
         company: Orcestra Gamificacao
@@ -180,21 +198,6 @@ params:
         info:
           enable: false
         content: "As the Project Manager for the Hallelujah project, I led a team of four developers in the development of a dynamic mobile application. With a focus on client-server architecture, we employed React Native for frontend development and Flask for creating a robust back-end API. The API was responsible for transferring data from the client's database to our PostgreSQL database, ensuring seamless integration and an enhanced user experience on the front-end."
-
-      - job: "Marketing Advisor"
-        company: "Orcestra Gamificacao"
-        companyUrl: "https://orcestra.com.br"
-        date: "Jan 2020 - Aug 2020"
-        info:
-          enable: false
-        content: |
-          Initially I worked in the creation of arts and posts for facebook and instagram, but, after defining the areas of operation, I was responsible for creating and disseminating the contents of the [company's blog](https://orcestra.com.br/blogs/), which achieved a growth of 300% during my services.
-          
-          During this period I studied several contents such as SEO and copywriting, to improve the level and reach of publications; Self-Determination Theory and other psychology content, in order to be able to write about motivation; Octalysis and other gamification frameworks, for texts on this subject; and software content, such as Requirements Elicitation or Scrum.
-
-          - [Scrum: Como fazer mais em menos tempo](http://orcestra.com.br/2020/06/06/scrum-como-fazer-mais-em-menos-tempo/)
-          - [As 6 etapas para Desenvolver uma Gamificação](http://orcestra.com.br/2020/06/01/as-6-etapas-para-desenvolver-uma-gamificacao/).
-          >> All texts are in brazilian portuguese
 
   # Education
   education:
@@ -211,8 +214,8 @@ params:
         content: |-
           Extracurricular Activities
             - Worked at [Orc'estra Gamificação](https://orcestra.com.br/), a [Junior Company](https://brasiljunior.org.br/). 
-            - Student assistant of the subjects: Computer Programming Algorithms, Programming for Competition, Design of Algorithms and Databases
-            - Worked on Scientific Initiative Project about [MUDs](https://pt.wikipedia.org/wiki/Multi-user_dungeon), the [UnMUD](https://unmud.github.io/UnMUD/#/)
+            - Student assistant of the subjects: Computer Programming Algorithms, Programming for Competition, Design of Algorithms and Databases.
+            - Worked on Scientific Initiative Project about [MUDs](https://pt.wikipedia.org/wiki/Multi-user_dungeon), the [UnMUD](https://unmud.github.io/UnMUD/#/), which receive Honorable mention at 29th UnB Scientific Initiation Congress.
 
   # games
   games:
@@ -227,10 +230,24 @@ params:
           link: https://mach874k.com/project/reallity-rpg/
         badges:
           - "En"
+          - "RPG"
         # links:
         #   - icon: fab fa-github
         #     url: https://github.com/GameJamFGA-UnB/Grupo4
 
+      - title: Retro Arsenal
+        content: Your game is being destroyed. Your weapon is games. Fight the enemies. Play your best game.
+        image: /images/games/RetroArsenal.png
+        featured:
+          name: Play
+          link: https://iurisevero.itch.io/retro-arsenal
+        badges:
+          - "Game Jam"
+          - "PT-Br / En"
+          - "1st Place 🥇"
+          - "FPS"
+          # - "3rd Place 🥉"
+      
       - title: Till the Last Seed
         content: Protect your friendly alien and help him restore Earth by fighting the mutant parasites.
         image: /images/games/TillTheLastSeed.png
@@ -241,6 +258,7 @@ params:
           - "Game Jam"
           - "PT-Br"
           - "1st Place 🥇"
+          - "Hero Defense"
           # - "3rd Place 🥉"
         links:
           - icon: fab fa-github
@@ -255,8 +273,8 @@ params:
         badges:
           - "Game Jam"
           - "PT-Br"
-          # - "2nd Place 🥈"
           - "1st Place 🥇"
+          - "Management"
         links:
           - icon: fab fa-github
             url: https://github.com/iurisevero/PajuAlves
@@ -271,6 +289,7 @@ params:
           - "Game Jam"
           - "PT-Br"
           - "2nd Place 🥈"
+          - "Visual Novel"
         links:
           - icon: fab fa-github
             url: https://github.com/iurisevero/MadJam
@@ -284,6 +303,7 @@ params:
         badges:
           - "Game Jam"
           - "En"
+          - "Platform"
         links:
           - icon: fab fa-github
             url: https://github.com/GameJamFGA-UnB/Grupo4
@@ -340,12 +360,18 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - title: Game Jam+ DF 2024/2025
+        content: Participation in the 2024/2025 edition of Game Jam+, reaching the 1st place.
+        url: https://youtu.be/ZwGIPnNcSZ4?si=bQP6UrmyKzQIQ5Y6&t=2690
       - title: Game Jam+ DF 2023/2024
         content: Participation in the 2023/2024 edition of Game Jam+, reaching the 1st place.
-        url: https://www.youtube.com/watch?app=desktop&v=Nja72yQsv3Q
+        url: https://www.youtube.com/live/Nja72yQsv3Q?si=Miuyu7wAWOWa8gYI&t=3643
       - title: Sebrae Inova Game Jam 2023
         content: Participation in the 2023 edition of Sebrae Inova Game Jam, reaching the 1st place.
         url: https://itch.io/jam/sebrae-inova
+      - title: 29th UnB Scientific Initiation Congress and 20th DF Scientific Initiation Congress 
+        content: Honorable mention at 29th UnB Scientific Initiation Congress and 20th DF Scientific Initiation Congress
+        url: https://iurisevero.github.io/certificates/#29th-unb-scientific-initiation-congress-and-20th-df-scientific-initiation-congress
       - title: Mad Jam 2022
         content: Participation in the 2022 edition of Mad Jam, reaching the 2th place.
         url: https://itch.io/jam/madjam2022
