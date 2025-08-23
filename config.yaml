@@ -111,7 +111,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/resume.pdf"
+      url: "/IuriSeveroResume.pdf"
       download: true
     socialLinks:
       fontAwesomeIcons:
