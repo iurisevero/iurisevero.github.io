@@ -137,15 +137,15 @@ Iuri Severo
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#games"
-                            aria-label="projects">Games</a>
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">Projects</a>
                     </li>
                     
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#projects"
-                            aria-label="projects">Projects</a>
+                        <a class="nav-link" href="/#games"
+                            aria-label="games">Games</a>
                     </li>
                     
 
@@ -162,19 +162,24 @@ Iuri Severo
                             aria-label="contact">Contact</a>
                     </li>
                     
-
-                    
-                    
                     
                     
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/certificates" title="Certificates">
-                            
                             Certificates
                         </a>
                     </li>
                     
                     
+                    <li class="nav-item navbar-text dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Resume
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="/software-engineer-resume" title="Software Engineer">Software Engineer</a></li>
+                          <li><a class="dropdown-item" href="/game-developer-resume" title="Game Developer">Game Developer</a></li>
+                        </ul>
+                      </li>
                 </ul>
 
                 
@@ -195,20 +200,13 @@ Iuri Severo
                     Iuri.
                 </h2>
                 <h3>
-                    I create games (or try to)
+                    I create software solutions and games (or try to)
                 </h3>
                 <p class="hero-content">
-                    A passionate gamer and developer. I like to master everything I try to do.<br/>22% Achiever / 22% Free Spirit according to HEXAD user types
+                    A passionate software engineer and gamer. I like to master everything I try to do.<br/>22% Achiever / 22% Free Spirit according to HEXAD user types
                 </p>
                 <div class="row">
-                    <div class="col-auto h-100">
-                        
-                        <a href="/IuriSeveroResume.pdf" class="btn" download>
-                            Resume
-                        </a>
-                        
-                    </div>
-                    <div class="col-auto px-0 h-100"><span id="loading-icons" style="display: none;">
+                <div class="col-auto px-0 h-100"><span id="loading-icons" style="display: none;">
     
     <span class="px-1">
         <a href="https://github.com/iurisevero" target="_blank" class="btn social-icon">
@@ -521,8 +519,11 @@ Iuri Severo
             </div>
             
             <div class="col-sm-12 col-md-12 col-lg-8 content">
-                <p>Graduated in Software Engineering from the University of Brasília, with a focus on Competitive Programming and <strong>Game Development</strong>. I&rsquo;ve participated in several Programming Marathons, many Game Jams, and even tried building an MMO with some friends (yeah, a bit of a crazy idea… we definitely bit off more than we could chew, but who knows, maybe one day it&rsquo;ll happen?). Currently, I work at <strong>External Secrets Inc.</strong> as a Full Stack Engineer, developing solutions for <strong>secrets management</strong>. I also worked at ANTAQ, where I developed internal systems.</p>
-<p>Ever since I can remember, I&rsquo;ve been passionate about games—whether on PC, console, or mobile—and I&rsquo;ve always admired the influence they have on players and the emotions they spark. My goal is to one day <strong>create games that bring this same passion to others</strong>, games that captivate players just as much as I was when I played The Legend of Zelda: Ocarina of Time for the first time.</p>
+                <p>Software engineer with full stack experience. Recent work includes <a href="https://www.externalsecrets.com/" target="_blank">External Secrets Inc.</a> (Python, Go, React, Kubernetes, open source contributions) and <a href="https://www.gov.br/antaq/pt-br" target="_blank">ANTAQ</a> (Oracle APEX, PL/SQL, requirements gathering).
+                </p>
+                <p>
+                I pick up new tools quickly, I stay on problems until they are actually resolved, and I am happiest when I can help wherever the bottleneck is: code, APIs, infrastructure, or clarifying requirements with stakeholders.
+                </p>
 
 
                 
@@ -532,15 +533,18 @@ Iuri Severo
                     <li>Go</li>
                     
                     <li>Python</li>
+
+                    <li>React</li>
                     
+                    <li>TypeScript</li>
+
+                    <li>PostgreSQL</li>
+
                     <li>Kubernetes</li>
                     
                     <li>C#</li>
                     
-                    <li>Unity3d</li>
-                    
-                    <li>C++</li>
-                    
+                    <li>Unity3d</li>                    
                 </ul>
                 
             </div>
@@ -635,14 +639,14 @@ Iuri Severo
                                 <small>-</small>
                                 <a href="https://www.externalsecrets.com/" target="_blank">External Secrets Inc</a>
                                 <div class="pb-1">
-                                    <small>Nov 2024 - present</small>
+                                    <small>Nov 2024 - Nov 2025</small>
                                     
                                     <span class="p-2">
                                         <span 
                                             style="cursor: pointer;" 
                                             data-bs-toggle="tooltip" 
                                             data-bs-placement="top" 
-                                            data-bs-original-title=Working&#32;as&#32;a&#32;Full&#32;Stack&#32;Engineer&#32;at&#32;External&#32;Secrets&#32;Inc.
+                                            data-bs-original-title="Remote working with international team"
                                         >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -654,11 +658,12 @@ Iuri Severo
                             </div>
 
                             <ul>
-<li>Co-develop the web user interface for all company services.</li>
-<li>Co-developed an audit analytics platform using MongoDB, providing real-time visibility and compliance reporting for secret management.</li>
-<li>Co-developed a dynamic credentials system for Kubernetes, issuing secrets at pod startup and revoking them on teardown, avoiding secret leakage.</li>
-<li>Contribute to the External Secrets Operator (open source), implementing bug fixes, new generators, and Kubernetes controllers.</li>
-</ul>
+<li>Developed web user interfaces for the company's services using React, TypeScript, and Tailwind CSS.</li>
+<li>Developed a secrets auditing and analysis platform using Python and MongoDB.</li>
+<li>Led the development of audit policies, with custom REGO rules, and webhooks triggering defined by policy compliance conditions.</li>
+<li>Developed a dynamic credentials system for Kubernetes, issuing secrets at pod startup and revoking them on teardown, avoiding secret leakage.</li>
+<li>Developed a secret-distribution workflow resource on Kubernetes using the External Secrets CRDs. Delivered almost 50% of the feature tasks.</li>
+<li>Contributed to the External Secrets Operator (open source), implementing bug fixes and new generators.</li>
 
                         </div>
                         
@@ -683,7 +688,7 @@ Iuri Severo
                                             style="cursor: pointer;" 
                                             data-bs-toggle="tooltip" 
                                             data-bs-placement="top" 
-                                            data-bs-original-title=Working&#32;as&#32;a&#32;Full&#32;Stack&#32;Developer&#32;at&#32;ANTAQ
+                                            data-bs-original-title="Remote working with national team"
                                         > 
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -725,7 +730,7 @@ Iuri Severo
                                             style="cursor: pointer;" 
                                             data-bs-toggle="tooltip" 
                                             data-bs-placement="top" 
-                                            data-bs-original-title=Working&#32;as&#32;a&#32;Software&#32;Engineer&#32;and&#32;Game&#32;Dev&#32;at&#32;Mach874k
+                                            data-bs-original-title="Remote working with national team in different timezones"
                                         > 
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -834,6 +839,192 @@ Iuri Severo
     </div>
 </section>
 
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Projects</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="UnMUD">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/ExternalSecretsIncLogo.png" alt="External Secrets Inc">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">External Secrets Inc</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Holistic secrets management. Tying everything together for seamless sensible data security and streamlined operations.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/external-secrets-inc" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://www.externalsecrets.com/" target="_blank">
+                                Site
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="UnMUD">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/iuri_invert.png" alt="UnMUD">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">UnMUD</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            UnMUD is a Multi-User Dungeon (MUD) created as a Research and Course Completion Project at the University of Brasília. The primary objective was to develop a deployable MUD codebase (CI/CD) and integrate it to a relational database (PostgreSQL) while focusing on increasing test coverage, enhancing clean code, upgrading tooling and enforcing new C&#43;&#43; versions best practices.
+
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/UnMUD/UnMUD" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://unmud.github.io/UnMUD/#/" target="_blank">
+                                Site
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="EuPescador">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/EuPescador.png" alt="EuPescador">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">EuPescador</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            EuPescador is a mobile application, developed by Software Engineering students at UnB on the FGA campus, which aims to help the project &#34;Pro-Espécies: Todos contra a extinção&#34;
+
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/fga-eps-mds/2021.1-Pro-Especies-Docs" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://fga-eps-mds.github.io/2021.1-Pro-Especies-Docs/" target="_blank">
+                                Site
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="iGado">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/iGado.png" alt="iGado">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">iGado</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The iGado application aims to contribute to the management and management of cattle that are concentrated in rural properties.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/UnBArqDsw/2020.1_G13_iGado" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://unbarqdsw.github.io/2020.1_G13_iGado/#/" target="_blank">
+                                Site
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Aix">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/Aix.png" alt="Aix">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Aix</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Aix is a learning chatbot integrated into the Jupyter platform as a support base for teaching python language for beginner programmers!
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/fga-eps-mds/2019.1-Aix" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://fga-eps-mds.github.io/2019.1-Aix/" target="_blank">
+                                Site
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
 
 <section id="games" class="py-5">
     <div class="container">
@@ -1085,157 +1276,6 @@ Iuri Severo
     </div>
 </section>
 
-<section id="projects" class="py-5">
-    <div class="container">
-        <h3 class="text-center">Projects</h3>
-        <div class="row justify-content-center px-3 px-md-5">
-            
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="UnMUD">
-                    <div class="card-head">
-                        <img class="card-img-top" src="/iuri_invert.png" alt="UnMUD">
-                    </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                        </div>
-                        <h5 class="card-title bg-transparent mt-1">UnMUD</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            UnMUD is a Multi-User Dungeon (MUD) created as a Research and Course Completion Project at the University of Brasília. The primary objective was to develop a deployable MUD codebase (CI/CD) and integrate it to a relational database (PostgreSQL) while focusing on increasing test coverage, enhancing clean code, upgrading tooling and enforcing new C&#43;&#43; versions best practices.
-
-                        </div>
-                    </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        <span class="m-1 mx-2">
-                            <a href="https://github.com/UnMUD/UnMUD" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </span>
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://unmud.github.io/UnMUD/#/" target="_blank">
-                                Site
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="EuPescador">
-                    <div class="card-head">
-                        <img class="card-img-top" src="/images/projects/EuPescador.png" alt="EuPescador">
-                    </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                        </div>
-                        <h5 class="card-title bg-transparent mt-1">EuPescador</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            EuPescador is a mobile application, developed by Software Engineering students at UnB on the FGA campus, which aims to help the project &#34;Pro-Espécies: Todos contra a extinção&#34;
-
-                        </div>
-                    </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        <span class="m-1 mx-2">
-                            <a href="https://github.com/fga-eps-mds/2021.1-Pro-Especies-Docs" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </span>
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://fga-eps-mds.github.io/2021.1-Pro-Especies-Docs/" target="_blank">
-                                Site
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="iGado">
-                    <div class="card-head">
-                        <img class="card-img-top" src="/images/projects/iGado.png" alt="iGado">
-                    </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                        </div>
-                        <h5 class="card-title bg-transparent mt-1">iGado</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            The iGado application aims to contribute to the management and management of cattle that are concentrated in rural properties.
-                        </div>
-                    </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        <span class="m-1 mx-2">
-                            <a href="https://github.com/UnBArqDsw/2020.1_G13_iGado" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </span>
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://unbarqdsw.github.io/2020.1_G13_iGado/#/" target="_blank">
-                                Site
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="Aix">
-                    <div class="card-head">
-                        <img class="card-img-top" src="/images/projects/Aix.png" alt="Aix">
-                    </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                        </div>
-                        <h5 class="card-title bg-transparent mt-1">Aix</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            Aix is a learning chatbot integrated into the Jupyter platform as a support base for teaching python language for beginner programmers!
-                        </div>
-                    </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        <span class="m-1 mx-2">
-                            <a href="https://github.com/fga-eps-mds/2019.1-Aix" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </span>
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://fga-eps-mds.github.io/2019.1-Aix/" target="_blank">
-                                Site
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            
-        </div>
-    </div>
-</section>
 
 <section id="achievements" class="py-5">
     <div class="container">
@@ -1456,6 +1496,10 @@ Iuri Severo
         </div>
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (el) { return new bootstrap.Tooltip(el); });
+</script>
 <script>
     if (document.body.className.includes("light")) {
         document.body.classList.add('dark');
