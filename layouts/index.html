@@ -21,4 +21,48 @@
 {{- partial "sections/games.html" . -}}
 {{- partial "sections/achievements.html" . -}}
 {{- partial "sections/contact.html" . -}}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Equalize experience tab content height
+    var tabPanes = document.querySelectorAll('#experience .tab-pane');
+    var maxH = 0;
+    tabPanes.forEach(function(p) {
+        p.classList.add('show', 'active');
+        if (p.scrollHeight > maxH) maxH = p.scrollHeight;
+        p.classList.remove('show', 'active');
+    });
+    if (tabPanes.length) tabPanes[0].classList.add('show', 'active');
+    var tabContent = document.querySelector('#experience .tab-content');
+    if (tabContent && maxH) tabContent.style.minHeight = maxH + 'px';
+
+    // Equalize carousel slide heights
+    document.querySelectorAll('.carousel').forEach(function(carousel) {
+        var items = carousel.querySelectorAll('.carousel-item');
+        var maxSlideH = 0;
+        items.forEach(function(item) {
+            item.classList.add('active');
+            if (item.scrollHeight > maxSlideH) maxSlideH = item.scrollHeight;
+            item.classList.remove('active');
+        });
+        if (items.length) items[0].classList.add('active');
+        var inner = carousel.querySelector('.carousel-inner');
+        if (inner && maxSlideH) inner.style.minHeight = maxSlideH + 'px';
+
+        // Sync dot indicators
+        carousel.addEventListener('slid.bs.carousel', function(e) {
+            var dots = carousel.closest('section').querySelectorAll('.carousel-dot');
+            dots.forEach(function(d) { d.classList.remove('active'); });
+            if (dots[e.to]) dots[e.to].classList.add('active');
+        });
+    });
+
+    // Auto-slide achievements carousel
+    var achCarousel = document.getElementById('achievementsCarousel');
+    if (achCarousel) {
+        var bsCarousel = new bootstrap.Carousel(achCarousel, { interval: 5000, ride: 'carousel' });
+        bsCarousel.cycle();
+    }
+});
+</script>
 {{ end }}

@@ -316,8 +316,12 @@ params:
     # title: "Custom Name"
     items:
       - title: External Secrets Inc
-        content: |
-          External Secrets Inc provides enterprise solutions for secrets management in Kubernetes. As a Full Stack Engineer, I contribute to the External Secrets Operator (open source), co-develop the web UI, and build services for audit analytics and dynamic credentials.
+        content: Enterprise solutions for secrets management in Kubernetes.
+        contributions:
+          - "Co-developed the web UI for all company services"
+          - "Built audit analytics platform with MongoDB for compliance reporting"
+          - "Developed dynamic credentials system, issuing secrets at pod startup"
+          - "Contributed to External Secrets Operator (open source): bug fixes, generators, controllers"
         image: /images/projects/ExternalSecretsIncLogo.png
         featured:
           name: Site
@@ -327,8 +331,11 @@ params:
             url: https://github.com/external-secrets/external-secrets
 
       - title: UnMUD
-        content: |
-          UnMUD is a Multi-User Dungeon (MUD) created as a Research and Course Completion Project at the University of Brasília. The primary objective was to develop a deployable MUD codebase (CI/CD) and integrate it to a relational database (PostgreSQL) while focusing on increasing test coverage, enhancing clean code, upgrading tooling and enforcing new C++ versions best practices.
+        content: A Multi-User Dungeon (MUD) created as a Research and Course Completion Project at the University of Brasilia.
+        contributions:
+          - "Developed a deployable MUD codebase with CI/CD pipeline"
+          - "Integrated PostgreSQL relational database"
+          - "Increased test coverage and enforced modern C++ best practices"
         image: /iuri_invert.png
         featured:
           name: Site
@@ -338,8 +345,11 @@ params:
             url: https://github.com/UnMUD/UnMUD
 
       - title: EuPescador
-        content: |
-          EuPescador is a mobile application, developed by Software Engineering students at UnB on the FGA campus, which aims to help the project "Pro-Espécies: Todos contra a extinção"
+        content: A mobile application to help the project "Pro-Especies - Todos contra a extincao", developed by Software Engineering students at UnB.
+        contributions:
+          - "Acted as Tech Lead and Scrum Master"
+          - "Managed DevOps pipeline and deployment"
+          - "Developed backend API with Node.js"
         image: /images/projects/EuPescador.png
         featured:
           name: Site
@@ -349,7 +359,11 @@ params:
             url: https://github.com/fga-eps-mds/2021.1-Pro-Especies-Docs
 
       - title: iGado
-        content: The iGado application aims to contribute to the management and management of cattle that are concentrated in rural properties.
+        content: Application for management of cattle concentrated in rural properties.
+        contributions:
+          - "Designed software architecture using GoF and GRASP patterns"
+          - "Developed frontend with React Native"
+          - "Contributed to requirements elicitation and documentation"
         image: /images/projects/iGado.png
         featured:
           name: Site
@@ -359,7 +373,11 @@ params:
             url: https://github.com/UnBArqDsw/2020.1_G13_iGado
 
       - title: Aix
-        content: Aix is a learning chatbot integrated into the Jupyter platform as a support base for teaching python language for beginner programmers!
+        content: A learning chatbot integrated into Jupyter as a support base for teaching Python to beginner programmers.
+        contributions:
+          - "Acted as Product Owner and DevOps"
+          - "Managed Rasa chatbot training and NLP pipeline"
+          - "Built CI/CD pipeline and deployment infrastructure"
         image: /images/projects/Aix.png
         featured:
           name: Site

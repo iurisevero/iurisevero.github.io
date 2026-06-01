@@ -1,0 +1,74 @@
+{{ if .Site.Params.achievements.enable | default false }}
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ .Site.Params.achievements.title | default "Achievements" }}</h3>
+
+        {{ $items := .Site.Params.achievements.items }}
+        {{ $total := len $items }}
+        {{ $perSlide := 3 }}
+        {{ $slides := div (add $total (sub $perSlide 1)) $perSlide }}
+
+        <div class="py-4">
+            <div class="carousel-indicators-top text-center mb-3">
+                {{ range $s := seq $slides }}
+                <button class="carousel-dot {{ if eq $s 1 }}active{{ end }}"
+                    data-bs-target="#achievementsCarousel" data-bs-slide-to="{{ sub $s 1 }}"
+                    {{ if eq $s 1 }}aria-current="true"{{ end }}
+                    aria-label="Slide {{ $s }}">
+                </button>
+                {{ end }}
+            </div>
+
+            <div id="achievementsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    {{ range $s := seq $slides }}
+                    {{ $startIdx := mul (sub $s 1) $perSlide }}
+                    <div class="carousel-item {{ if eq $s 1 }}active{{ end }}">
+                        <div class="row justify-content-center px-3 px-md-5">
+                            {{ range $i := seq $perSlide }}
+                            {{ $idx := add $startIdx (sub $i 1) }}
+                            {{ if lt $idx $total }}
+                            {{ $item := index $items $idx }}
+                            <div class="col-lg-4 col-md-6 my-3">
+                                {{ if $item.url }}
+                                <a class="card my-3 h-100 p-3" href="{{ $item.url }}" title="{{ $item.title }}" target="_blank">
+                                    <div class="card-body bg-transparent">
+                                        <h5 class="card-title bg-transparent">{{ $item.title }}</h5>
+                                        <div class="card-text secondary-font">
+                                            {{ $item.content }}
+                                        </div>
+                                    </div>
+                                </a>
+                                {{ else }}
+                                <div class="card my-3 h-100 p-3" title="{{ $item.title }}">
+                                    <div class="card-body bg-transparent">
+                                        <h5 class="card-title bg-transparent">{{ $item.title }}</h5>
+                                        <div class="card-text secondary-font">
+                                            {{ $item.content }}
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+
+                {{ if gt $slides 1 }}
+                <button class="carousel-control-prev" type="button" data-bs-target="#achievementsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#achievementsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,10 @@
+{{ if .Site.Params.projects.enable | default false }}
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ .Site.Params.projects.title | default "Projects" }}</h3>
+        <div class="py-4">
+            {{ partial "carousel-section.html" (dict "items" .Site.Params.projects.items "sectionId" "projects" "showBadges" false) }}
+        </div>
+    </div>
+</section>
+{{ end }}
