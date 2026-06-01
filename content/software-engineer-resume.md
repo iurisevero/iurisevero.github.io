@@ -1,9 +1,7 @@
 ---
 title: "Software Engineer Resume"
 description: "Iuri Severo - Software Engineer Resume"
-headerInfo: false
-toc: false
-socialShare: false
+layout: resume
 ---
 
 <div class="text-center mb-4">

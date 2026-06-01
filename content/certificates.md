@@ -7,9 +7,15 @@ headerInfo: false
 socialShare: false
 ---
 
-<!-- ## Game Jam Plus DF 2023/2024
+## Game Jam Plus DF 2023/2024
 
-<img src="/images/certificate/GJP2324.jpg" alt="drawing" width="900"/> -->
+<img src="/images/certificate/certificadoGJP2425_Incubation.jpg" alt="drawing" width="900"/>
+
+&nbsp;
+
+<img src="/images/certificate/certificadoGJPlus2425_Acceleration.jpg" alt="drawing" width="900"/>
+
+---
 
 <!-- ## Sebrae Inova Game Jam 2023
 
@@ -19,13 +25,17 @@ socialShare: false
 
 <img src="/images/certificate/HonorPibic.jpg" alt="drawing" width="900"/>
 
+&nbsp;
+
 <img src="/images/certificate/ConclusionPibic.jpg" alt="drawing" width="900"/>
+
+---
 
 ## MadJam
 
 <img src="/images/certificate/MadJam2022.jpg" alt="drawing" width="900"/>
 
-&nbsp;
+---
 
 ## International Collegiate Programming Contest
 
@@ -35,10 +45,10 @@ socialShare: false
 
 <img src="/images/certificate/ICPC2018.jpg" alt="drawing" width="900"/>
 
-&nbsp;
+---
 
 ## Brazilian Programming Olympics
 
 <img src="/images/certificate/OBI.jpg" alt="drawing" width="900"/>
 
-&nbsp;
+---

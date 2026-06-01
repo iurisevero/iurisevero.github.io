@@ -1,9 +1,7 @@
 ---
 title: "Game Developer Resume"
 description: "Iuri Severo - Game Developer Resume"
-headerInfo: false
-toc: false
-socialShare: false
+layout: resume
 ---
 
 <div class="text-center mb-4">

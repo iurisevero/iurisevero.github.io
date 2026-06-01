@@ -44,8 +44,10 @@ Menus:
       weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "Iuri Severo"
+  description: "Software Engineer and Game Developer. Full Stack Engineer at External Secrets Inc., building secrets management solutions for Kubernetes."
+  images:
+    - /images/draw.png
   # staticPath: ""  # The path to serve the static files from
   favicon: "/iuri_invert.png"
 
@@ -110,8 +112,8 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/IuriSeveroResume.pdf"
-      download: true
+      url: "/software-engineer-resume"
+      download: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -138,10 +140,14 @@ params:
       title: "Here are a few technologies I've been working with recently:"
       items:
         - "Go"
+        - "React"
         - "Python"
-        - "Kubernetes"
-        - "C#"
+        - "TypeScript"
+        - "MongoDB"
         - "Unity3d"
+        - "Docker"
+        - "C#"
+        - "Kubernetes"
         - "C++"
 
   # Experience
@@ -152,10 +158,9 @@ params:
       - job: "Full Stack Engineer"
         company: "External Secrets Inc"
         companyUrl: "https://www.externalsecrets.com/"
-        date: "Nov 2024 - present"
+        date: "Nov 2024 - Nov 2025"
         info:
-          enable: true
-          content: Working as a Full Stack Engineer at External Secrets Inc.
+          enable: false
         content: |
           - Co-develop the web user interface for all company services.
           - Co-developed an audit analytics platform using MongoDB, providing real-time visibility and compliance reporting for secret management.
@@ -168,8 +173,7 @@ params:
         companyUrl: "https://www.gov.br/antaq/pt-br"
         date: "Nov 2023 - Oct 2024"
         info:
-          enable: true
-          content: Working as a Full Stack Developer at ANTAQ
+          enable: false
         content: |
           - Developed internal systems using Oracle APEX and PL/SQL.
           - Actively participated in requirements elicitation and documentation.
@@ -179,10 +183,9 @@ params:
       - job: "Founder | Game Developer"
         company: "Mach874k"
         companyUrl: "https://mach874k.com/"
-        date: "Dez 2019 - November 2022"
+        date: "Dec 2019 - Nov 2022"
         info:
-          enable: true
-          content: Working as a Software Engineer and Game Dev at Mach874k
+          enable: false
         content: |
           Game developer specializing in Unity
           - Worked across multiple areas of game development, with a strong focus on Unity for projects such as Reality RPG, a 3D multiplayer mobile RPG,  and Critalia, a 2D singleplayer metroidvania.
@@ -193,7 +196,7 @@ params:
       - job: "Project Development Manager"
         company: Orcestra Gamificacao
         companyUrl: "https://orcestra.com.br"
-        date: "Fev 2020 - Out 2020"
+        date: "Feb 2020 - Oct 2020"
         info:
           enable: false
         content: "As the Project Manager for the Hallelujah project, I led a team of four developers in the development of a dynamic mobile application. With a focus on client-server architecture, we employed React Native for frontend development and Flask for creating a robust back-end API. The API was responsible for transferring data from the client's database to our PostgreSQL database, ensuring seamless integration and an enhanced user experience on the front-end."
@@ -312,6 +315,17 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - title: External Secrets Inc
+        content: |
+          External Secrets Inc provides enterprise solutions for secrets management in Kubernetes. As a Full Stack Engineer, I contribute to the External Secrets Operator (open source), co-develop the web UI, and build services for audit analytics and dynamic credentials.
+        image: /images/projects/ExternalSecretsIncLogo.png
+        featured:
+          name: Site
+          link: https://www.externalsecrets.com/
+        links:
+          - icon: fab fa-github
+            url: https://github.com/external-secrets/external-secrets
+
       - title: UnMUD
         content: |
           UnMUD is a Multi-User Dungeon (MUD) created as a Research and Course Completion Project at the University of Brasília. The primary objective was to develop a deployable MUD codebase (CI/CD) and integrate it to a relational database (PostgreSQL) while focusing on increasing test coverage, enhancing clean code, upgrading tooling and enforcing new C++ versions best practices.
@@ -372,7 +386,7 @@ params:
         content: Honorable mention at 29th UnB Scientific Initiation Congress and 20th DF Scientific Initiation Congress
         url: https://iurisevero.github.io/certificates/#29th-unb-scientific-initiation-congress-and-20th-df-scientific-initiation-congress
       - title: Mad Jam 2022
-        content: Participation in the 2022 edition of Mad Jam, reaching the 2th place.
+        content: Participation in the 2022 edition of Mad Jam, reaching the 2nd place.
         url: https://itch.io/jam/madjam2022
       - title: International Collegiate Programming Contest (ICPC)
         content: Participation in the 2019 edition of ICPC, South America Brazil, First Phase, reaching the 258th place among 726 teams.
