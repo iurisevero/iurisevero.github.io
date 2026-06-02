@@ -370,7 +370,7 @@ params:
       - title: External Secrets Inc
         content: Enterprise platform for secrets management, audit analytics, and workflow orchestration in Kubernetes.
         contributions:
-          - "Built the audit analytics platform end-to-end (Python/FastAPI backend, Go listener, Vue.js frontend)"
+          - "Built the audit analytics platform end-to-end (Python/FastAPI backend, Go listener, React and TypeScript frontend)"
           - "Developed 5 credential generators for automated provisioning (Basic Auth, SSH, Neo4j, PostgreSQL, OpenAI)"
           - "Developed workflow engine connecting secrets management into orchestrated, repeatable workflows"
           - "Co-authored RFC on Machine Identity Provisioning Service"
