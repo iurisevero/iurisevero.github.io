@@ -1,0 +1,110 @@
+{{ define "head" }}
+<meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/list.css" media="all">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/custom.css" media="all">
+{{ end }}
+
+{{ define "title" }}
+{{.Title }} | {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+<div class="container pt-5" id="list-page">
+    <h2 class="text-center pb-2">{{.Title}}</h2>
+
+    {{ $allTags := slice }}
+    {{ range .Paginator.Pages }}
+        {{ with .Params.tags }}
+            {{ range . }}
+                {{ $allTags = $allTags | append . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    {{ $uniqueTags := $allTags | uniq | sort }}
+
+    {{ if $uniqueTags }}
+    <div class="text-center mb-4">
+        <div class="d-inline-flex flex-wrap justify-content-center gap-2" id="tag-filters">
+            <button class="btn btn-sm tag-filter-btn active" data-tag="all">All</button>
+            {{ range $uniqueTags }}
+            <button class="btn btn-sm tag-filter-btn" data-tag="{{ . }}">{{ . }}</button>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    <div class="row" id="blog-cards">
+        {{ range .Paginator.Pages }}
+        <div class="col-lg-4 col-md-6 my-3 blog-card" data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}">
+            <div class="card h-100">
+                <div class="card-body bg-transparent p-4 shadow-sm">
+                    <a href="{{ .RelPermalink }}" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title | truncate 25 }}</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>{{ .Summary | truncate 300}}</p>
+                    </div>
+                </div>
+                <div class="mt-auto post-footer bg-transparent py-3">
+                    <span class="float-start bg-transparent">{{ .Date.Format "January 2, 2006" }}</span>
+                    <a href="{{ .RelPermalink }}" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        <div class="row justify-content-center">
+            <div class="col-auto m-3">
+                {{template "_internal/pagination.html" . }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.tag-filter-btn');
+    var cards = document.querySelectorAll('.blog-card');
+    var activeTags = new Set();
+
+    buttons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var tag = btn.dataset.tag;
+
+            if (tag === 'all') {
+                activeTags.clear();
+                buttons.forEach(function(b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+            } else {
+                var allBtn = document.querySelector('[data-tag="all"]');
+                allBtn.classList.remove('active');
+
+                if (activeTags.has(tag)) {
+                    activeTags.delete(tag);
+                    btn.classList.remove('active');
+                } else {
+                    activeTags.add(tag);
+                    btn.classList.add('active');
+                }
+
+                if (activeTags.size === 0) {
+                    allBtn.classList.add('active');
+                }
+            }
+
+            cards.forEach(function(card) {
+                var cardTags = card.dataset.tags.split(',');
+                if (activeTags.size === 0) {
+                    card.style.display = '';
+                } else {
+                    var match = false;
+                    activeTags.forEach(function(t) {
+                        if (cardTags.indexOf(t) !== -1) match = true;
+                    });
+                    card.style.display = match ? '' : 'none';
+                }
+            });
+        });
+    });
+});
+</script>
+{{ end }}

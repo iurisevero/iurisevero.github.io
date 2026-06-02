@@ -1,3 +1,26 @@
+/* Blog tag filter buttons */
+.tag-filter-btn {
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    background-color: transparent;
+    border-radius: 2rem;
+    padding: 0.25rem 0.75rem;
+    transition: none;
+}
+
+.tag-filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.tag-filter-btn:hover {
+    opacity: 0.8;
+}
+
+.tag-filter-btn:focus {
+    box-shadow: none;
+}
+
 /* About skills - 3 columns */
 #about ul {
     grid-template-columns: repeat(3, minmax(100px, 1fr)) !important;

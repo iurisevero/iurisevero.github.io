@@ -3,7 +3,7 @@ languageCode: "en-us"
 title: "Iuri Severo"
 theme: hugo-profile
 
-# Paginate: 3
+Paginate: 11
 # disqusShortname: gurusabarish
 # googleAnalytics: G-DWJJVE27WD
 
@@ -14,11 +14,11 @@ markup:
 
 Menus:
   main:
-    # - identifier: blog
-    #   name: Blog
-    #   title: Blog posts
-    #   url: /blogs
-    #   weight: 1
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 4
 
     - identifier: certificates
       name: Certificates
@@ -29,19 +29,19 @@ Menus:
     - identifier: resume
       name: Resume
       title: Resume
-      weight: 2
+      weight: 5
     - identifier: software-engineer-resume
       name: Software Engineer
       title: Software Engineer
       url: /software-engineer-resume
       parent: resume
-      weight: 1
+      weight: 2
     - identifier: game-developer-resume
       name: Game Developer
       title: Game Developer
       url: /game-developer-resume
       parent: resume
-      weight: 2
+      weight: 3
 
 params:
   title: "Iuri Severo"
@@ -217,9 +217,21 @@ params:
             - Student assistant of the subjects: Computer Programming Algorithms, Programming for Competition, Design of Algorithms and Databases.
             - Worked on Scientific Initiative Project about [MUDs](https://pt.wikipedia.org/wiki/Multi-user_dungeon), the [UnMUD](https://unmud.github.io/UnMUD/#/), which received Honorable mention at 29th UnB Scientific Initiation Congress.
 
-          Courses
-            - [Game Design Experience (GDX)](https://www.baptixta.com.br/) by Baptixta — Game design fundamentals, system design, and GDD documentation.
-            - [Innova Hub 2024](https://indiehero.com.br/) by Indie Hero — Marketing and management for games.
+      - title: "Game Design Experience (GDX)"
+        category: "Courses"
+        school:
+          name: "Baptixta"
+          url: "https://www.baptixta.com.br/"
+        date: "2024"
+        content: "Game design fundamentals, system design, and GDD documentation."
+
+      - title: "Innova Hub 2024"
+        category: "Courses"
+        school:
+          name: "Indie Hero"
+          url: "https://indiehero.com.br/"
+        date: "2024"
+        content: "Marketing and management for games."
 
   # games
   games:
@@ -238,7 +250,7 @@ params:
           - "1st Place 🥇"
           - "FPS"
         contributions:
-          - "Led the team of 9 (3 programmers, 4 artists, 1 game designer, 1 sound artist)"
+          - "Led the programming team and coordinated with other leads to control scope and define tasks"
           - "Managed the team as Head of Programming, planning delivery schedules"
           - "Led the development of movement, health, inventory and weapon systems"
           - "Developed win/lose conditions, scene transition and UI system"
