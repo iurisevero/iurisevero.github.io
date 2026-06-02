@@ -89,6 +89,26 @@ document.addEventListener('DOMContentLoaded', function() {
         var bsCarousel = new bootstrap.Carousel(achCarousel, { interval: 5000, ride: 'carousel' });
         bsCarousel.cycle();
     }
+    // Next section arrow - only on hero
+    var sections = document.querySelectorAll('section');
+    var arrow = document.getElementById('next-section-arrow');
+    var heroSection = document.getElementById('hero');
+    if (arrow && sections.length) {
+        arrow.addEventListener('click', function() {
+            if (heroSection && sections[1]) {
+                sections[1].scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+        window.addEventListener('scroll', function() {
+            var pastHero = heroSection && window.scrollY > heroSection.offsetHeight * 0.5;
+            arrow.style.opacity = pastHero ? '0' : '0.4';
+            arrow.style.pointerEvents = pastHero ? 'none' : 'auto';
+        });
+    }
 });
 </script>
+
+<div id="next-section-arrow">
+    <i class="fas fa-chevron-down"></i>
+</div>
 {{ end }}

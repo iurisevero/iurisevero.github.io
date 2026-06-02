@@ -89,7 +89,6 @@ params:
   # If you want to customize the menu, you can change it here
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    brandLogo: "/iuri_invert.png" # Logo for the brand | default is the favicon variable
     brandName: "Iuri Severo" # Brand name for the brand | default is the title variable
 
   #   menus:
@@ -160,6 +159,8 @@ params:
         company: "External Secrets Inc"
         companyUrl: "https://www.externalsecrets.com/"
         date: "Nov 2024 - Nov 2025"
+        info:
+          enable: false
         content: |
           - Developed web user interfaces for the company's services using React, TypeScript, and Tailwind CSS.
           - Developed a secrets auditing and analysis platform using Python (FastAPI) and MongoDB.
@@ -173,6 +174,8 @@ params:
         company: "National Waterway Transport Agency"
         companyUrl: "https://www.gov.br/antaq/pt-br"
         date: "Nov 2023 - Oct 2024"
+        info:
+          enable: false
         content: |
           - Developed a system for risk management using Oracle APEX and PL/SQL.
           - Participated in the elicitation and documentation of requirements for the ships, boats and ports registration and management system.
@@ -183,6 +186,8 @@ params:
         company: "Mach874k"
         companyUrl: "https://mach874k.com/"
         date: "Dec 2019 - Nov 2022"
+        info:
+          enable: false
         content: |
           Game developer specializing in Unity
           - Worked across multiple areas of game development, with a strong focus on Unity for projects such as Reality RPG, a 3D multiplayer mobile RPG, and Critalia, a 2D singleplayer metroidvania.
@@ -194,6 +199,8 @@ params:
         company: Orcestra Gamificacao
         companyUrl: "https://orcestra.com.br"
         date: "Feb 2020 - Oct 2020"
+        info:
+          enable: false
         content: |
           - Led a team of four developers building a gamified mobile application.
           - Developed frontend using React Native.
@@ -232,6 +239,13 @@ params:
           url: "https://indiehero.com.br/"
         date: "2024"
         content: "Marketing and management for games."
+      
+      - title: "English Course - Advanced Level C1"
+        category: "Courses"
+        school:
+          name: "Spanish Idiomas"
+        date: "2013 - 2018"
+        content: "English course from Beginner Level A1 to Advanced Level C1."
 
   # games
   games:
