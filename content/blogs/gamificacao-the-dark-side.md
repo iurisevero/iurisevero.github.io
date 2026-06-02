@@ -8,6 +8,8 @@ tags: ["gamificacao", "orcestra"]
 headerInfo: true
 socialShare: false
 toc: false
+lang: pt
+translation: /blogs/gamificacao-the-dark-side-en/
 ---
 
 "Se você soubesse o poder do lado sombrio...", para Darth Vader e para o universo de George Lucas, o lado sombrio pode ser mais forte, mas, na gamificação não é bem assim.

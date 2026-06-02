@@ -8,6 +8,8 @@ tags: ["scrum", "agile", "orcestra"]
 headerInfo: true
 socialShare: false
 toc: false
+lang: pt
+translation: /blogs/scrum-como-fazer-mais-em-menos-tempo-en/
 ---
 
 Criar um novo produto, gerenciar e desenvolver projetos... O que essas atividades tem em comum? São difíceis de realizar. Felizmente existem algumas ferramentas que podem ajudar nessas atividades e o Scrum é uma delas.

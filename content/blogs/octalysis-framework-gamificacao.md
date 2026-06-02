@@ -8,6 +8,8 @@ tags: ["gamificacao", "octalysis", "orcestra"]
 headerInfo: true
 socialShare: false
 toc: false
+lang: pt
+translation: /blogs/octalysis-framework-gamificacao-en/
 ---
 
 <figure style="text-align: center;">

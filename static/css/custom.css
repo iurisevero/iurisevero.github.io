@@ -21,6 +21,24 @@
     box-shadow: none;
 }
 
+/* Language switch button */
+.lang-switch-btn {
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    border-radius: 2rem;
+    padding: 0.25rem 0.75rem;
+    transition: none;
+}
+
+.lang-switch-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.lang-switch-btn:focus {
+    box-shadow: none;
+}
+
 /* About skills - 3 columns */
 #about ul {
     grid-template-columns: repeat(3, minmax(100px, 1fr)) !important;

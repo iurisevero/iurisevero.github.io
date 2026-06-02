@@ -20,9 +20,20 @@
             <h1 class="text-center mb-4">{{ .Title }}</h1>
             {{ if .Params.headerInfo | default true }}
             <div class="text-center">
-              {{ .Params.author }} 
+              {{ .Params.author }}
               <small>|</small>
               {{ .Date.Format "Jan 2, 2006" }}
+            </div>
+            {{ end }}
+            {{ if .Params.translation }}
+            <div class="text-center mt-2">
+              <a href="{{ .Params.translation }}" class="btn btn-sm lang-switch-btn">
+                {{ if eq (.Params.lang | default "en") "pt" }}
+                  <i class="fas fa-globe me-1"></i> Read in English
+                {{ else }}
+                  <i class="fas fa-globe me-1"></i> Ler em Português
+                {{ end }}
+              </a>
             </div>
             {{ end }}
           </div>

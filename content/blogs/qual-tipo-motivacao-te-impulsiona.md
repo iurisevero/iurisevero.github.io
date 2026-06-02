@@ -8,6 +8,8 @@ tags: ["gamificacao", "motivacao", "orcestra"]
 headerInfo: true
 socialShare: false
 toc: false
+lang: pt
+translation: /blogs/qual-tipo-motivacao-te-impulsiona-en/
 ---
 
 Você já deve ter se perguntado o que é a motivação, de onde ela vem e como ela funciona. Realmente é algo bem curioso, que pouco se sabe sobre e que, segundo a psicologia, é um **elemento chave em nosso bem-estar**. Por isso, nesse texto iremos discutir sobre o que é a motivação e alguns de seus tipos.

@@ -8,6 +8,8 @@ tags: ["gamificacao", "orcestra"]
 headerInfo: true
 socialShare: false
 toc: false
+lang: pt
+translation: /blogs/6-etapas-gamificacao-en/
 ---
 
 Desenvolver uma gamificação não é uma tarefa fácil. Diversos conhecimentos são necessários para que seja possível **identificar uma dor**, **analisar o público-alvo** e, só então, **criar o design gamificado** do serviço proposto. No entanto, existem algumas ferramentas que ajudam nessa jornada e nesse texto iremos falar sobre uma delas: **o Framework 6D**.

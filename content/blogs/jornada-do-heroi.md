@@ -8,6 +8,8 @@ tags: ["gamificacao", "orcestra"]
 headerInfo: true
 socialShare: false
 toc: false
+lang: pt
+translation: /blogs/jornada-do-heroi-en/
 ---
 
 <figure style="text-align: center;">

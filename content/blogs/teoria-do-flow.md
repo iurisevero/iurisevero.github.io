@@ -8,6 +8,8 @@ tags: ["gamificacao", "psicologia", "orcestra"]
 headerInfo: true
 socialShare: false
 toc: false
+lang: pt
+translation: /blogs/teoria-do-flow-en/
 ---
 
 <figure style="text-align: center;">

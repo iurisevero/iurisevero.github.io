@@ -8,6 +8,8 @@ tags: ["gamificacao", "motivacao", "orcestra"]
 headerInfo: true
 socialShare: false
 toc: false
+lang: pt
+translation: /blogs/6-formas-motivacao-autodeterminacao-en/
 ---
 
 Existem vários tipos de motivação, mas, entre eles, a motivação extrínseca e intrínseca merecem destaque. Na Teoria da Autodeterminação (TDA), os estudiosos Ryan e Deci discutem sobre uma forma de "evolução" da motivação, que vai da desmotivação até a motivação intrínseca, passando por 4 estágios de motivação extrínseca, e é sobre isso que iremos discutir nesse texto.

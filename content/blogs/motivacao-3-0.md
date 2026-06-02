@@ -8,6 +8,8 @@ tags: ["gamificacao", "motivacao", "orcestra"]
 headerInfo: true
 socialShare: false
 toc: false
+lang: pt
+translation: /blogs/motivacao-3-0-en/
 ---
 
 Motivação 3.0 é um novo conceito sobre a forma como as pessoas se motivam intrinsecamente e nesse post, nós vamos conversar sobre **como a motivação acontece**, segundo a visão de Daniel Pink.

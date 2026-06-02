@@ -8,6 +8,8 @@ tags: ["gamificacao", "orcestra"]
 headerInfo: true
 socialShare: false
 toc: false
+lang: pt
+translation: /blogs/tipos-de-player-en/
 ---
 
 Em uma gamificação é muito importante saber com quem se está lidando, para que seja possível construir um cenário que **encante e motive o público alvo**. No entanto, não é fácil generalizar as características e gostos das pessoas. Diversos estudos foram realizados para superar essa adversidade, e um dos resultados encontrados foram os **Tipos de Player**.

@@ -8,6 +8,8 @@ tags: ["gamificacao", "jogos", "orcestra"]
 headerInfo: true
 socialShare: false
 toc: false
+lang: pt
+translation: /blogs/4-pilares-jane-mcgonigal-en/
 ---
 
 <figure style="text-align: center;">
