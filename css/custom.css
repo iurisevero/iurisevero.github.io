@@ -39,6 +39,45 @@
     box-shadow: none;
 }
 
+/* Next section arrow */
+#next-section-arrow {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.4;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: opacity 0.3s;
+}
+
+#next-section-arrow:hover {
+    opacity: 0.8;
+}
+
+/* Fixed navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: var(--background-color);
+}
+
+.dark header {
+    background-color: var(--background-color-dark);
+}
+
+#hero {
+    padding-top: 80px !important;
+}
+
+section:not(#hero) {
+    scroll-margin-top: 35px;
+}
+
 /* About skills - 3 columns */
 #about ul {
     grid-template-columns: repeat(3, minmax(100px, 1fr)) !important;
