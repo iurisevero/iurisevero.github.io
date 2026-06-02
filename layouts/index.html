@@ -37,25 +37,51 @@ document.addEventListener('DOMContentLoaded', function() {
     if (tabContent && maxH) tabContent.style.minHeight = maxH + 'px';
 
     // Equalize carousel slide heights
-    document.querySelectorAll('.carousel').forEach(function(carousel) {
-        var items = carousel.querySelectorAll('.carousel-item');
-        var maxSlideH = 0;
-        items.forEach(function(item) {
-            item.classList.add('active');
-            if (item.scrollHeight > maxSlideH) maxSlideH = item.scrollHeight;
-            item.classList.remove('active');
-        });
-        if (items.length) items[0].classList.add('active');
-        var inner = carousel.querySelector('.carousel-inner');
-        if (inner && maxSlideH) inner.style.minHeight = maxSlideH + 'px';
+    function equalizeCarousels() {
+        document.querySelectorAll('.carousel').forEach(function(carousel) {
+            var items = carousel.querySelectorAll('.carousel-item');
+            var maxSlideH = 0;
+            var heights = [];
 
-        // Sync dot indicators
-        carousel.addEventListener('slid.bs.carousel', function(e) {
-            var dots = carousel.closest('section').querySelectorAll('.carousel-dot');
-            dots.forEach(function(d) { d.classList.remove('active'); });
-            if (dots[e.to]) dots[e.to].classList.add('active');
+            // Force all items visible for measurement
+            items.forEach(function(item) {
+                item.style.display = 'block';
+                item.style.position = 'absolute';
+                item.style.visibility = 'hidden';
+                item.style.width = '100%';
+                item.style.paddingTop = '0';
+            });
+            items.forEach(function(item, i) {
+                heights[i] = item.scrollHeight;
+                if (heights[i] > maxSlideH) maxSlideH = heights[i];
+            });
+            // Restore
+            items.forEach(function(item) {
+                item.style.display = '';
+                item.style.position = '';
+                item.style.visibility = '';
+                item.style.width = '';
+            });
+
+            var inner = carousel.querySelector('.carousel-inner');
+            if (inner && maxSlideH) {
+                inner.style.minHeight = maxSlideH + 'px';
+                items.forEach(function(item, i) {
+                    var pad = (maxSlideH - heights[i]) / 2;
+                    if (pad > 0) item.style.paddingTop = pad + 'px';
+                });
+            }
+
+            // Sync dot indicators
+            carousel.addEventListener('slid.bs.carousel', function(e) {
+                var dots = carousel.closest('section').querySelectorAll('.carousel-dot');
+                dots.forEach(function(d) { d.classList.remove('active'); });
+                if (dots[e.to]) dots[e.to].classList.add('active');
+            });
         });
-    });
+    }
+    equalizeCarousels();
+    window.addEventListener('load', equalizeCarousels);
 
     // Auto-slide achievements carousel
     var achCarousel = document.getElementById('achievementsCarousel');

@@ -1,3 +1,14 @@
+/* About skills - 3 columns */
+#about ul {
+    grid-template-columns: repeat(3, minmax(100px, 1fr)) !important;
+}
+
+/* Hero resume button - match social icon height */
+#hero a.btn:not(.social-icon) {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+}
+
 /* Carousel top indicators */
 .carousel-indicators-top {
     display: flex;
@@ -25,17 +36,7 @@
     opacity: 0.6;
 }
 
-/* Carousel slide min-height to prevent page jumps */
-.carousel-inner {
-    min-height: 500px;
-}
-
-.carousel-item > .container {
-    min-height: 480px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+/* Carousel slide - JS sets min-height dynamically */
 
 /* Carousel rows - match education card style */
 .carousel-row {

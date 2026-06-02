@@ -106,8 +106,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Iuri."
-    subtitle: "I create games (or try to)"
-    content: "A passionate gamer and developer. I like to master everything I try to do.<br/>22% Achiever / 22% Free Spirit according to HEXAD user types"
+    subtitle: "I build systems and games<br/><span style='font-size: 0.7em; opacity: 0.5; display: block; text-align: right;'>(or try to)</span>"
+    content: "A software engineer and game developer. I like to master everything I try to do.<br/>22% Achiever / 22% Free Spirit according to HEXAD user types"
     image: /images/draw.png
     button:
       enable: true
@@ -132,23 +132,24 @@ params:
     title: "About Me"
     image: "/images/formatura.png"
     content: |-
-      Graduated in Software Engineering from the University of Brasília, with a focus on Competitive Programming and **Game Development**. I've participated in several Programming Marathons, many Game Jams, and even tried building an MMO with some friends (yeah, a bit of a crazy idea… we definitely bit off more than we could chew, but who knows, maybe one day it'll happen?). Currently, I work at **External Secrets Inc.** as a Full Stack Engineer, developing solutions for **secrets management**. I also worked at ANTAQ, where I developed internal systems.
+      Software Engineer with a degree from the University of Brasília, focused on **full-stack development** and **cloud infrastructure**. I worked as a Full Stack Engineer at **External Secrets Inc.**, building backend services with Python and Go, Kubernetes controllers, and web UIs with React and TypeScript. I also worked at ANTAQ, where I developed internal systems. I've participated in several Programming Marathons, many Game Jams, and even tried building an MMO with some friends (yeah, a bit of a crazy idea… we definitely bit off more than we could chew, but who knows, maybe one day it'll happen?).
 
-      Ever since I can remember, I've been passionate about games—whether on PC, console, or mobile—and I've always admired the influence they have on players and the emotions they spark. My goal is to one day **create games that bring this same passion to others**, games that captivate players just as much as I was when I played The Legend of Zelda: Ocarina of Time for the first time.
+      Ever since I can remember, I've been passionate about games, whether on PC, console, or mobile, and I've always admired the influence they have on players and the emotions they spark. My goal is to one day **create games that bring this same passion to others**, games that captivate players just as much as I was when I played The Legend of Zelda: Ocarina of Time for the first time.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
         - "Go"
         - "React"
+        - "Unity3d"
         - "Python"
         - "TypeScript"
-        - "MongoDB"
-        - "Unity3d"
-        - "Docker"
         - "C#"
+        - "MongoDB"
+        - "Tailwind"
+        - "Git"
+        - "Docker"
         - "Kubernetes"
-        - "C++"
 
   # Experience
   experience:
@@ -159,24 +160,22 @@ params:
         company: "External Secrets Inc"
         companyUrl: "https://www.externalsecrets.com/"
         date: "Nov 2024 - Nov 2025"
-        info:
-          enable: false
         content: |
-          - Co-develop the web user interface for all company services.
-          - Co-developed an audit analytics platform using MongoDB, providing real-time visibility and compliance reporting for secret management.
-          - Co-developed a dynamic credentials system for Kubernetes, issuing secrets at pod startup and revoking them on teardown, avoiding secret leakage.
-          - Contribute to the External Secrets Operator (open source), implementing bug fixes, new generators, and Kubernetes controllers.
+          - Developed web user interfaces for the company's services using React, TypeScript, and Tailwind CSS.
+          - Developed a secrets auditing and analysis platform using Python (FastAPI) and MongoDB.
+          - Led the development of audit policies, with custom REGO rules, and webhooks triggering defined by policy compliance conditions.
+          - Developed a dynamic credentials system for Kubernetes, issuing secrets at pod startup and revoking them on teardown, avoiding secret leakage.
+          - Developed a secret-distribution workflow resource on Kubernetes using the External Secrets CRDs. Delivered almost 50% of the feature tasks.
+          - Contributed to the External Secrets Operator (open source), implementing bug fixes and new generators.
 
 
       - job: "Full Stack Developer"
         company: "National Waterway Transport Agency"
         companyUrl: "https://www.gov.br/antaq/pt-br"
         date: "Nov 2023 - Oct 2024"
-        info:
-          enable: false
         content: |
-          - Developed internal systems using Oracle APEX and PL/SQL.
-          - Actively participated in requirements elicitation and documentation.
+          - Developed a system for risk management using Oracle APEX and PL/SQL.
+          - Participated in the elicitation and documentation of requirements for the ships, boats and ports registration and management system.
           - Implemented functions to enable a self-updating database by integrating data from external APIs.
 
 
@@ -184,11 +183,9 @@ params:
         company: "Mach874k"
         companyUrl: "https://mach874k.com/"
         date: "Dec 2019 - Nov 2022"
-        info:
-          enable: false
         content: |
           Game developer specializing in Unity
-          - Worked across multiple areas of game development, with a strong focus on Unity for projects such as Reality RPG, a 3D multiplayer mobile RPG,  and Critalia, a 2D singleplayer metroidvania.
+          - Worked across multiple areas of game development, with a strong focus on Unity for projects such as Reality RPG, a 3D multiplayer mobile RPG, and Critalia, a 2D singleplayer metroidvania.
           - Developed APIs written in Python and Go and integrated them to Unity.
           - Managed cloud infrastructure using Kubernetes and Google Kubernetes Engine (GKE).
 
@@ -197,9 +194,10 @@ params:
         company: Orcestra Gamificacao
         companyUrl: "https://orcestra.com.br"
         date: "Feb 2020 - Oct 2020"
-        info:
-          enable: false
-        content: "As the Project Manager for the Hallelujah project, I led a team of four developers in the development of a dynamic mobile application. With a focus on client-server architecture, we employed React Native for frontend development and Flask for creating a robust back-end API. The API was responsible for transferring data from the client's database to our PostgreSQL database, ensuring seamless integration and an enhanced user experience on the front-end."
+        content: |
+          - Led a team of four developers building a gamified mobile application.
+          - Developed frontend using React Native.
+          - Built backend REST API with Flask, integrating client database to PostgreSQL.
 
   # Education
   education:
@@ -215,30 +213,21 @@ params:
         GPA: "4.47 out of 5.0"
         content: |-
           Extracurricular Activities
-            - Worked at [Orc'estra Gamificação](https://orcestra.com.br/), a [Junior Company](https://brasiljunior.org.br/). 
+            - Worked at [Orc'estra Gamificação](https://orcestra.com.br/), a [Junior Company](https://brasiljunior.org.br/).
             - Student assistant of the subjects: Computer Programming Algorithms, Programming for Competition, Design of Algorithms and Databases.
-            - Worked on Scientific Initiative Project about [MUDs](https://pt.wikipedia.org/wiki/Multi-user_dungeon), the [UnMUD](https://unmud.github.io/UnMUD/#/), which receive Honorable mention at 29th UnB Scientific Initiation Congress.
+            - Worked on Scientific Initiative Project about [MUDs](https://pt.wikipedia.org/wiki/Multi-user_dungeon), the [UnMUD](https://unmud.github.io/UnMUD/#/), which received Honorable mention at 29th UnB Scientific Initiation Congress.
+
+          Courses
+            - [Game Design Experience (GDX)](https://www.baptixta.com.br/) by Baptixta — Game design fundamentals, system design, and GDD documentation.
+            - [Innova Hub 2024](https://indiehero.com.br/) by Indie Hero — Marketing and management for games.
 
   # games
   games:
     enable: true
     # title: "Games"
     items:
-      - title: Reality RPG
-        content: A mobile Cyber Fantasy Adventure with Augmented reality that allows you to play in the Real World.
-        image: /images/games/RealityRPG.png
-        featured:
-          name: Site
-          link: https://mach874k.com/project/reallity-rpg/
-        badges:
-          - "En"
-          - "RPG"
-        # links:
-        #   - icon: fab fa-github
-        #     url: https://github.com/GameJamFGA-UnB/Grupo4
-
       - title: Retro Arsenal
-        content: Your game is being destroyed. Your weapon is games. Fight the enemies. Play your best game.
+        content: 2.5D boomer shooter FPS with multiple weapons and enemies, developed in Unity.
         image: /images/games/RetroArsenal.png
         featured:
           name: Play
@@ -248,10 +237,33 @@ params:
           - "PT-Br / En"
           - "1st Place 🥇"
           - "FPS"
-          # - "3rd Place 🥉"
-      
+        contributions:
+          - "Led the team of 9 (3 programmers, 4 artists, 1 game designer, 1 sound artist)"
+          - "Managed the team as Head of Programming, planning delivery schedules"
+          - "Led the development of movement, health, inventory and weapon systems"
+          - "Developed win/lose conditions, scene transition and UI system"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/iurisevero/GJ-2425
+
+      - title: Reality RPG
+        content: 3D Mobile MMORPG with turn-based combat and augmented reality, developed in Unity.
+        image: /images/games/RealityRPG.png
+        featured:
+          name: Site
+          link: https://mach874k.com/project/reallity-rpg/
+        badges:
+          - "En"
+          - "RPG"
+        contributions:
+          - "Led the design and implementation of turn-based combat features"
+          - "Developed real-time location with augmented reality using Mapbox API"
+          - "Developed client-server communication using Mirror Networking"
+          - "Developed APIs in Python and Go, integrated to Unity"
+          - "Managed cloud infrastructure using Google Kubernetes Engine"
+
       - title: Till the Last Seed
-        content: Protect your friendly alien and help him restore Earth by fighting the mutant parasites.
+        content: Post-apocalyptic game where a forgotten robot protects plants to bring color back to a dead world.
         image: /images/games/TillTheLastSeed.png
         featured:
           name: Play
@@ -261,13 +273,16 @@ params:
           - "PT-Br"
           - "1st Place 🥇"
           - "Hero Defense"
-          # - "3rd Place 🥉"
+        contributions:
+          - "Led the team of 7 (2 programmers, 5 artists) during the game jam"
+          - "Programmed player movement, enemy behavior, and map interaction mechanics"
+          - "Elaborated sales pitch (slides + video), market analysis, and delivery schedule"
         links:
           - icon: fab fa-github
             url: https://github.com/iurisevero/GJ-2324
 
       - title: Engarrafados
-        content: Control the traffic and don't let the traffic jam drive the city residents crazy!
+        content: Smart-city traffic management game where you control intersections and upgrade traffic controls.
         image: /images/games/Engarrafados.png
         featured:
           name: Play
@@ -277,10 +292,14 @@ params:
           - "PT-Br"
           - "1st Place 🥇"
           - "Management"
+        contributions:
+          - "Led the team of 4 (1 programmer, 3 artists) during the game jam"
+          - "Defined the initial game design and managed scope throughout the jam"
+          - "Solo programmer, developed all game mechanics"
         links:
           - icon: fab fa-github
             url: https://github.com/iurisevero/PajuAlves
-      
+
       - title: Jurnada pelo CLT
         content: Help Jurema conquer the much-desired signature at CLT in this Visual Novel full of mysticism and easter eggs.
         image: /images/games/JurnadaPeloCLT.png
@@ -292,12 +311,15 @@ params:
           - "PT-Br"
           - "2nd Place 🥈"
           - "Visual Novel"
+        contributions:
+          - "Led the team of 5 (1 programmer, 4 artists with no prior game dev experience)"
+          - "Solo programmer; mediated design discussions and managed scope"
         links:
           - icon: fab fa-github
             url: https://github.com/iurisevero/MadJam
 
       - title: Running Up that City
-        content: A single player platform game where you control the super rock star who finds himself in an adverse situation and is forced to flee from one of his crazy fans while overcoming the obstacles in the city.
+        content: A platform game where you control a rock star fleeing from a crazed fan while overcoming city obstacles.
         image: /images/games/RunningUpThatCity.png
         featured:
           name: Play
@@ -306,6 +328,10 @@ params:
           - "Game Jam"
           - "En"
           - "Platform"
+        contributions:
+          - "Led the team of 4 (2 programmers, 2 artists) during the game jam"
+          - "Defined game design and distributed tasks across the team"
+          - "Programmed menu system, user input, obstacles, health and audio systems"
         links:
           - icon: fab fa-github
             url: https://github.com/GameJamFGA-UnB/Grupo4
@@ -316,12 +342,12 @@ params:
     # title: "Custom Name"
     items:
       - title: External Secrets Inc
-        content: Enterprise solutions for secrets management in Kubernetes.
+        content: Enterprise platform for secrets management, audit analytics, and workflow orchestration in Kubernetes.
         contributions:
-          - "Co-developed the web UI for all company services"
-          - "Built audit analytics platform with MongoDB for compliance reporting"
-          - "Developed dynamic credentials system, issuing secrets at pod startup"
-          - "Contributed to External Secrets Operator (open source): bug fixes, generators, controllers"
+          - "Built the audit analytics platform end-to-end (Python/FastAPI backend, Go listener, Vue.js frontend)"
+          - "Developed 5 credential generators for automated provisioning (Basic Auth, SSH, Neo4j, PostgreSQL, OpenAI)"
+          - "Developed workflow engine connecting secrets management into orchestrated, repeatable workflows"
+          - "Co-authored RFC on Machine Identity Provisioning Service"
         image: /images/projects/ExternalSecretsIncLogo.png
         featured:
           name: Site
@@ -331,11 +357,11 @@ params:
             url: https://github.com/external-secrets/external-secrets
 
       - title: UnMUD
-        content: A Multi-User Dungeon (MUD) created as a Research and Course Completion Project at the University of Brasilia.
+        content: Modernized and stabilized a legacy C++ Multi-User Dungeon as a course completion and research project at UnB.
         contributions:
-          - "Developed a deployable MUD codebase with CI/CD pipeline"
-          - "Integrated PostgreSQL relational database"
-          - "Increased test coverage and enforced modern C++ best practices"
+          - "Implemented CI/CD pipelines to automate builds and tests"
+          - "Integrated PostgreSQL relational database for persistent game data"
+          - "Increased test coverage, applied clean code, adopted modern C++ best practices"
         image: /iuri_invert.png
         featured:
           name: Site
@@ -345,11 +371,11 @@ params:
             url: https://github.com/UnMUD/UnMUD
 
       - title: EuPescador
-        content: A mobile application to help the project "Pro-Especies - Todos contra a extincao", developed by Software Engineering students at UnB.
+        content: Mobile app for creating and validating field reports about ichthyological species in Tocantins, Brazil.
         contributions:
-          - "Acted as Tech Lead and Scrum Master"
-          - "Managed DevOps pipeline and deployment"
-          - "Developed backend API with Node.js"
+          - "Acted as Architect, designing class diagrams, DER, and architectural documentation"
+          - "Configured CI/CD release pipelines, SonarCloud, and CodeCov across all service repos"
+          - "Implemented map location features and fixed CORS and UI issues"
         image: /images/projects/EuPescador.png
         featured:
           name: Site
@@ -359,11 +385,11 @@ params:
             url: https://github.com/fga-eps-mds/2021.1-Pro-Especies-Docs
 
       - title: iGado
-        content: Application for management of cattle concentrated in rural properties.
+        content: Mobile app for cattle management on rural properties, covering health, finances, and inventory.
         contributions:
-          - "Designed software architecture using GoF and GRASP patterns"
-          - "Developed frontend with React Native"
-          - "Contributed to requirements elicitation and documentation"
+          - "Participated in requirements elicitation, methodology definition, and architecture planning"
+          - "Used Design Sprint-inspired approach for user needs refinement"
+          - "Implemented client-server architecture with Flutter frontend and Python/Flask backend"
         image: /images/projects/iGado.png
         featured:
           name: Site
@@ -373,11 +399,11 @@ params:
             url: https://github.com/UnBArqDsw/2020.1_G13_iGado
 
       - title: Aix
-        content: A learning chatbot integrated into Jupyter as a support base for teaching Python to beginner programmers.
+        content: A learning chatbot on Jupyter and Telegram to teach Python to beginners using Rasa NLP.
         contributions:
-          - "Acted as Product Owner and DevOps"
-          - "Managed Rasa chatbot training and NLP pipeline"
-          - "Built CI/CD pipeline and deployment infrastructure"
+          - "Built Python teaching content for the chatbot (intents, stories, conversation flows)"
+          - "Created Custom Actions for StackOverflow search and UVa Online Judge API integration"
+          - "Co-authored Architecture Document and refactored code structure"
         image: /images/projects/Aix.png
         featured:
           name: Site
