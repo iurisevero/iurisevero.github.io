@@ -70,12 +70,13 @@ header {
     background-color: var(--background-color-dark);
 }
 
-#hero {
-    padding-top: 80px !important;
+#content {
+    padding-top: 70px;
 }
 
-section:not(#hero) {
-    scroll-margin-top: 35px;
+section,
+[id] {
+    scroll-margin-top: 80px;
 }
 
 /* About skills - 3 columns */
